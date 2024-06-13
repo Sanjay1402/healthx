@@ -1,0 +1,42 @@
+.top_part{
+   text-align: center;
+}
+.values{
+    color: #1F8B7B;
+    font-size: 46.88px;
+    font-weight: 700;
+    
+}
+.uphold{
+   color:  #E9501D;
+}
+.commitment{
+color: #1E1E1E;   
+font-size: 35px;
+}
+
+.bottom_part{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    text-align: center;
+    
+    
+}
+.orange{
+    color: #E9501D;
+    align-self: center;
+    
+
+}
+
+/* .towrap{
+    
+    word-wrap: break-word;
+} */
+
+.text{
+    width: 15rem;
+    
+}

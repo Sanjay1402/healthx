@@ -1,0 +1,118 @@
+.container{
+    height: 45rem;
+    /* width: ; */
+    background-image: linear-gradient(to right, #E9501D1F , #1F8B7B1F, #EBC6621F);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 3%;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 3rem;
+    position: relative;
+
+
+    
+  }
+
+.dna{
+  position: absolute;
+  top: 0;
+  left: 30rem;
+  z-index: -1;
+  transform: rotate(-10.57deg);
+}
+.seven{
+  color: #E9501D;
+  font-size: 46px;
+  opacity: 10%;
+  font-weight: 700;
+  margin-left: 2rem;
+}
+.sptext{
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 35.72px;
+  color: #CFCFCF;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  align-self: center;
+  margin-top: 1rem;
+}
+.logo{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.logo img{
+  margin-right: 4.5rem;
+}
+
+.inner_container{
+  /* display: flex; */
+}
+.healthxtext{
+  background: linear-gradient(to right,#1F8B7B, #E9501D  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 400;
+  font-size: 36px;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  /* line-height: 52; */
+}
+.healthsoltext{
+  font-weight: 600;
+  font-size: 65px;
+  color: #E9501D;
+  margin-left: 2rem;
+}
+.foralltext{
+  color: #1E1E1E;
+  font-weight: 275;
+  font-size: 41px;
+  margin-left: 2rem;
+}
+.leftp{
+  margin-left: 2rem;
+}
+
+.bottom_container{
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  /* justify-self: s; */
+  
+}
+
+
+.shimage{
+ margin-left: 10rem;
+}
+
+.approw{
+ 
+  color: white;
+  margin-left: 2rem;
+  padding: 0;
+}
+
+/* .appstore{
+  background-color: #000100;
+  width: 182.87px;
+  height: 63.79px;
+  padding: 2px;
+  border-radius: 10px;
+} */
+
+.playstore{
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+.space{
+  margin-left: 1rem;
+}

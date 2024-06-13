@@ -1,0 +1,69 @@
+.container {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 101px;
+    margin-right: 101px;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 22px;
+  }
+  .logo3{
+    margin-left: 20px;
+    margin-bottom: 40px;
+  }
+
+  .logo2{
+    
+    margin-bottom: 40px;
+    margin-right: 20px;
+  }
+  .logo4{
+    
+    margin-bottom: 25px;
+  }
+  .link{
+    text-decoration:none;
+    color:#2D4755;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  
+  .links {
+    display: flex;
+    align-items: right;
+    gap: 40px;
+    margin-left: auto;
+    margin-right: 3rem;
+  }
+  
+  .button{
+    padding:16px 24px 16px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #1F8B7B;
+    border: none;
+    border-radius: 5px;
+    color:white;
+  }
+
+  .bar{
+    color: #1F8B7B;
+    font-size: 30.7px;
+    font-weight: 50;
+    text-decoration:none;
+    position: absolute;
+    margin-top:50px;
+  }
+  .selstyles{
+    width: 85px;
+    height: 36px;
+    border: 1px solid #EAEAEA;
+    padding: 8px 12px 8px 12px;
+    border-radius: 10px;
+    padding-bottom: 5px;
+  }
