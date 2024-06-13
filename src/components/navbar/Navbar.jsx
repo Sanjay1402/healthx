@@ -5,8 +5,6 @@ import Link from 'next/link'
 import styles from "./navbar.module.css";
 import Image from "next/image";
 
-
-
 const links = [
   {
     id: 1,
@@ -23,8 +21,8 @@ const links = [
     id: 3,
     title: "About us",
     url: "/about",
-  },
-  
+
+  },  
  
 ];
 
@@ -39,7 +37,6 @@ const Navbar = () => {
               alt=""
               height="122"
               width="103"
-              
               className={styles.image}
             />
         <Image
@@ -68,7 +65,7 @@ const Navbar = () => {
              
       </Link>
       <div className={styles.links}>
-        {links.map(link => <Link key={link.id } href={link.url} className={styles.link}>{link.title}</Link> )}
+        {links.map(link => <Link key={link.id} href={link.url} className={styles.link}>{link.title}</Link> )   }
         <div className={styles.seldiv }>
         <select className={styles.selstyles } name="language" id="language">
           <option value="english">eng</option>

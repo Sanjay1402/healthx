@@ -10,17 +10,15 @@
     margin-right: 1.5rem;
     margin-bottom: 3rem;
     position: relative;
-
-
     
   }
 
 .dna{
   position: absolute;
-  top: -10rem;
-  left: 40rem;
+  top: -15rem;
+  left: 29rem;
   z-index: -1;
-  transform: rotate(-10.57deg);
+  transform: rotate(-20.57deg);
 }
 
 .inner_container{
@@ -31,21 +29,21 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 46.88px;
   margin-left: 2rem;
   margin-top: 2rem;
   /* line-height: 52; */
 }
 .healthsoltext{
   font-weight: 600;
-  font-size: 65px;
+  font-size: 50.76px;
   color: #E9501D;
   margin-left: 2rem;
 }
 .foralltext{
   color: #1E1E1E;
   font-weight: 275;
-  font-size: 41px;
+  font-size: 38px;
   margin-left: 2rem;
 }
 .leftp{
@@ -60,14 +58,42 @@
   
 }
 
-
 .shimage{
  margin-left: 10rem;
 }
 
-
-
 .playstore{
   display: inline-block;
+  margin-left: 2rem;
+}
+.button{
+  padding:16px 32px 16px 32px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #1F8B7B;
+  border: none;
+  border-radius: 5px;
+  color:white;
+  margin-left: 2rem;
+  font-size: 18px;
+  font-weight: 500;
+}
+.button2{
+  padding:16px 32px 16px 32px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #E9501D;
+  border: none;
+  border-radius: 5px;
+  color:white;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  font-size: 18px;
+  font-weight: 500;
+}
+.smalltext{
+  font-size: 15px;
+  font-weight: 275;
+  line-height: 22.5px;
   margin-left: 2rem;
 }
