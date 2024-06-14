@@ -89,12 +89,7 @@ const appBanner = () => {
          width='425'
        /> 
       </div>
-      
-      </div>
-
-     
-          
-      
+      </div>      
     </div> 
   )
 }
