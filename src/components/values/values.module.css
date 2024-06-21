@@ -29,6 +29,7 @@ font-size: 35px;
     
 }
 .orange{
+    margin-top: 1rem;
     color: #E9501D;
     align-self: center;
     
@@ -41,6 +42,7 @@ font-size: 35px;
 } */
 
 .text{
-    width: 15rem;
+    /* width: 15rem; */
+    margin-top: 1rem;
     
 }

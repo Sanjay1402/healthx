@@ -3,7 +3,7 @@ import ContactBanner from '@/components/contactbanner/ContactBanner'
 import Values from '@/components/values/Values'
 import SolComp from '@/components/solcomp/SolComp'
 import CurrentPage from '@/components/currentpage/CurrentPage'
-
+import Image from 'next/image'
 import {
   Card,
   CardContent,
@@ -17,9 +17,9 @@ import {
 let text = {
 
  text1 : "Solutions",
- text2 : "For Individuals & Families",
- text3 : "In our fast-paced lives, visiting the doctor can be burdensome. Healthx offers convenient and safe healthcare solutions, avoiding the risks of self-diagnosis and treatment.",
- text4 : "Individual and Families",
+ text2 : "For Insurers",
+ text3 : "Healthx addresses the issue of excessive healthcare usage, reducing the burden on insurers and patients.",
+ text4 : "Government",
  text5 : "Solutions that Can Grow as You Do",
 }
 
@@ -34,27 +34,47 @@ const page = () => {
         <div className='grid grid-cols-3 gap-8 mb-10'>
           <Card>
             <CardHeader>
-              <CardTitle>No more waiting in line</CardTitle>
+            <Image
+                src="/card_images/test.png"
+                alt=""
+                height='119'
+                width='116'
+                className='mb-5'
+              /> 
+              <CardTitle> <div><span className='green'>Necessary test</span>  <span className='orange'>& med </span></div></CardTitle>
             </CardHeader>
             <CardContent>
-              <p>At Healthx, no more waiting. Access online doctors hassle-free. Book consultations, get prescriptions, and manage health records conveniently online.</p>
+              <p>At Healthx, our physicians prescribe only necessary tests and medications, minimizing overuse of medical services, reducing insurance costs for users.</p>
             </CardContent>
           </Card>
           <Card>
             <CardHeader>
-              
-              <CardTitle>Rushed visits</CardTitle>
+            <Image
+                src="/card_images/down.png"
+                alt=""
+                height='119'
+                width='116'
+                className='mb-5'
+              /> 
+              <CardTitle><div><span className='green'>Reduced</span> <span className='orange'>claim ratios</span></div></CardTitle>
             </CardHeader>
             <CardContent>
-              <p>Traditional visits feel rushed, leading to unnecessary costs. Healthx's 24/7 online doctors offer thorough attention and treatment, saving expenses.</p>
+              <p>Healthx helps lower claim ratios through innovative healthcare services emphasizing prevention, reducing costs for insurance companies.</p>
             </CardContent>
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle>Easily Accessible</CardTitle>
+            <Image
+                src="/card_images/reduce_cost.png"
+                alt=""
+                height='119'
+                width='116'
+                className='mb-5'
+              /> 
+              <CardTitle><div><span className='green'>Reducing</span> <span className='orange'>Hospital Costs</span> </div></CardTitle>
             </CardHeader>
             <CardContent>
-              <p>Our team offers personalized, cost-effective healthcare, minimizing unnecessary expenses through remote consultations and evidence-based practice.</p>
+              <p>Healthx reduces hospital costs with streamlined online doctor services, offering personalized care for corporate healthcare needs.</p>
             </CardContent>
           </Card>
          </div>

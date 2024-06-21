@@ -3,6 +3,7 @@ import ContactBanner from '@/components/contactbanner/ContactBanner'
 import Values from '@/components/values/Values'
 import SolComp from '@/components/solcomp/SolComp'
 import CurrentPage from '@/components/currentpage/CurrentPage'
+import Image from 'next/image'
 
 import {
   Card,
@@ -34,7 +35,14 @@ const page = () => {
         <div className='grid grid-cols-3 gap-8 mb-10'>
           <Card>
             <CardHeader>
-              <CardTitle>No more waiting in line</CardTitle>
+            <Image
+                src="/card_images/waiting.png"
+                alt=""
+                height='119'
+                width='116'
+                className='mb-5'
+              /> 
+              <CardTitle><div><span className='green'>No more</span> <span className='orange'>waiting in line</span></div></CardTitle>
             </CardHeader>
             <CardContent>
               <p>At Healthx, no more waiting. Access online doctors hassle-free. Book consultations, get prescriptions, and manage health records conveniently online.</p>
@@ -42,8 +50,14 @@ const page = () => {
           </Card>
           <Card>
             <CardHeader>
-              
-              <CardTitle>Rushed visits</CardTitle>
+            <Image
+                src="/card_images/rushed.png"
+                alt=""
+                height='119'
+                width='116'
+                className='mb-5'
+              /> 
+              <CardTitle><span className='green'>Rushed</span> <span className='orange'>visits</span></CardTitle>
             </CardHeader>
             <CardContent>
               <p>Traditional visits feel rushed, leading to unnecessary costs. Healthx's 24/7 online doctors offer thorough attention and treatment, saving expenses.</p>
@@ -51,7 +65,14 @@ const page = () => {
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle>Easily Accessible</CardTitle>
+            <Image
+                src="/card_images/accessable.png"
+                alt=""
+                height='119'
+                width='116'
+                className='mb-5'
+              /> 
+              <CardTitle><div><span className='green'>Easily</span> <span className='orange'>Accessible</span></div></CardTitle>
             </CardHeader>
             <CardContent>
               <p>Our team offers personalized, cost-effective healthcare, minimizing unnecessary expenses through remote consultations and evidence-based practice.</p>

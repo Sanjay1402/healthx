@@ -3,6 +3,7 @@ import ContactBanner from '@/components/contactbanner/ContactBanner'
 import Values from '@/components/values/Values'
 import SolComp from '@/components/solcomp/SolComp'
 import CurrentPage from '@/components/currentpage/CurrentPage'
+import Image from 'next/image'
 
 import {
   Card,
@@ -17,9 +18,9 @@ import {
 let text = {
 
  text1 : "Solutions",
- text2 : "For Individuals & Families",
- text3 : "In our fast-paced lives, visiting the doctor can be burdensome. Healthx offers convenient and safe healthcare solutions, avoiding the risks of self-diagnosis and treatment.",
- text4 : "Individual and Families",
+ text2 : "For  Government",
+ text3 : "Healthx addresses government challenges by offering an innovative, cost-effective, and efficient healthcare delivery model through our online doctor service, enhancing accessibility for citizens.",
+ text4 : "Government",
  text5 : "Solutions that Can Grow as You Do",
 }
 
@@ -34,27 +35,48 @@ const page = () => {
         <div className='grid grid-cols-3 gap-8 mb-10'>
           <Card>
             <CardHeader>
-              <CardTitle>No more waiting in line</CardTitle>
+            <Image
+                src="/card_images/reduce.png"
+                alt=""
+                height='119'
+                width='116'
+                className='mb-5'
+              /> 
+              <CardTitle> <div><span className='green'>Reduce</span> <span className='orange'>Healthcare Usage</span></div></CardTitle>
             </CardHeader>
             <CardContent>
-              <p>At Healthx, no more waiting. Access online doctors hassle-free. Book consultations, get prescriptions, and manage health records conveniently online.</p>
+              <p>Healthx's online doctor service minimizes healthcare service overutilization, ensuring cost control and effective resource allocation for governments.</p>
             </CardContent>
           </Card>
           <Card>
             <CardHeader>
-              
-              <CardTitle>Rushed visits</CardTitle>
+            <Image
+                src="/card_images/wait.png"
+                alt=""
+                height='119'
+                width='116'
+                className='mb-5'
+              /> 
+              <CardTitle><div><span className='green'>Long Waiting</span> <span className='orange'>hours</span></div></CardTitle>
             </CardHeader>
+           
             <CardContent>
-              <p>Traditional visits feel rushed, leading to unnecessary costs. Healthx's 24/7 online doctors offer thorough attention and treatment, saving expenses.</p>
+              <p>Healthx provides an online doctor service, eliminating long wait times and offering personalized treatments from licensed physicians and wellness advisors 24/7.</p>
             </CardContent>
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle>Easily Accessible</CardTitle>
+            <Image
+                src="/card_images/quality.png"
+                alt=""
+                height='119'
+                width='116'
+                className='mb-5'
+              /> 
+              <CardTitle> <div><span className='green'>Quality</span> <span className='orange'>Healthcare</span> </div></CardTitle>
             </CardHeader>
             <CardContent>
-              <p>Our team offers personalized, cost-effective healthcare, minimizing unnecessary expenses through remote consultations and evidence-based practice.</p>
+              <p>Our government healthcare solution delivers quality primary healthcare, promoting wellness and efficiency while reducing resource burdens.</p>
             </CardContent>
           </Card>
          </div>

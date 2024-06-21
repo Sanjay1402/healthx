@@ -9,15 +9,15 @@ const Values = () => {
         <div className={styles.values}>Values <span className={styles.uphold}>We Uphold</span></div>
         <div className={styles.commitment}>Commitment to Health and Well-being</div>
       </div>
-      <div className={styles.bottom_part}>
-        <div className={styles.towrap}> 
+      <div className= "grid grid-cols-4 gap-4 mt-20 mb-20 content-center">
+        <div className=''> 
           <Image
             src="/values/3.png"
             alt=""
             height='100'
             width='100'  
           /> 
-          <div className={styles.orange}>PEOPLE-CENTRIC</div>
+          <div className={styles.orange} >PEOPLE-CENTRIC</div>
           <div className={styles.text}>Consistently prioritize your needs</div>
         </div>
         <div className={styles.towrap}> 
