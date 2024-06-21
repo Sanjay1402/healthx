@@ -113,6 +113,7 @@ const AppIntegration = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 
