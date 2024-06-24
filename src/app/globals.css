@@ -103,3 +103,9 @@ textarea
    resize: none;
    height: 242.6px;
 }
+
+.gradient_text{
+  background: linear-gradient(to right,#1F8B7B, #E9501D  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}

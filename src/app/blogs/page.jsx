@@ -3,6 +3,7 @@ import CurrentPage from '@/components/currentpage/CurrentPage'
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import Image from 'next/image'
+import AppBanner from '@/components/appbanner/AppBanner'
 
 import {
   NavigationMenu,
@@ -43,9 +44,9 @@ const page = () => {
       <div className='flex flex-col '>
         <div className='flex '>
         <Input type="text" placeholder="Email" />
-        <Button className="">Send a message</Button>   
+        <Button className="bg_orange">Send a message</Button>   
         </div>
-        <NavigationMenu >
+        <NavigationMenu className="mt-10">
         <NavigationMenuList className="flex flex-col gap-y-8">
           <NavigationMenuItem>
            ALL
@@ -63,7 +64,7 @@ const page = () => {
       </NavigationMenu>
 
       <div className='mt-10'>
-        <div>Top Posts</div>
+        <div className='orange text-2xl font-normal'>Top Posts</div>
         <div className="p-10 ps-2 shadow-xl">
        
         <div className='flex'>
@@ -109,8 +110,8 @@ const page = () => {
         </div>
 
         <div className='mt-10'>
-          <div>Instagram</div>
-          <div>Health X Pakistan</div>
+          <div className='font-normal text-3xl mb-2'>Instagram</div>
+          <div className='font-normal text-3xl gradient_text mb-2'>Health X Pakistan</div>
           
           <div className='grid grid-cols-3  mb-10'>
 
@@ -163,8 +164,13 @@ const page = () => {
 
     </div>
       </div>
-      <div className='right'></div>
+
+
+      <div className='container mx-auto'></div>
+      <div className='mx-80'></div>
     </div>
+    <AppBanner />
+
    </main>
   )
 }

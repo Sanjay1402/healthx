@@ -141,7 +141,7 @@ const page = () => {
           <Input className="mb-5 orange-border" type="tel" placeholder="Phone" />
           <Input className="mb-5 orange-border" type="text" placeholder="Sector you belong to:" />
           <Textarea className='mb-5 orange-border' placeholder="Message"/>
-          <Button className="">Send a message</Button>   
+          <Button className="bg_orange">Send a message</Button>   
          </div>
         
 
@@ -206,8 +206,6 @@ const page = () => {
       </Accordion>
       
     </div>
-
-   
     </div>
     </main>
   )
