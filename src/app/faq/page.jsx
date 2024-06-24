@@ -7,12 +7,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 
-
-
-
-
 const page = () => {
-
     
   return (
     <main className='container'>

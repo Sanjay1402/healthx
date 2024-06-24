@@ -88,3 +88,18 @@
   opacity: 10%;
   font-weight: 700;
 }
+
+.bg_orange{
+  background-color: #E9501D;
+}
+
+.orange-border{
+  border: 1.46px solid #E9501D;
+  border-radius: 7.29px;
+
+}
+textarea
+{
+   resize: none;
+   height: 242.6px;
+}
