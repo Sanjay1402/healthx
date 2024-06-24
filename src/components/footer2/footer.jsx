@@ -15,7 +15,7 @@ const Footer = () => {
             />
             <Image src="/footerlogo.png" width={85} height={10} alt="" />
           </div>
-          <div className="mt-2 pt-1">
+          <div className="mt-2 pt-2">
             <p className="text-2xl font-medium">
               Healthcare Solutions <br /> For All
             </p>
@@ -25,12 +25,13 @@ const Footer = () => {
               AUSTIN, Texas, Jan. 11, 2024 — Ambiq@
             </p>
           </div>
-          <div>
+          <div className="flex mt-8 pt-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="21"
-              height="21"
+              width="25"
+              height="25"
               fill="none"
+              className="mr-2"
             >
               <path
                 fill="#fff"
@@ -39,9 +40,10 @@ const Footer = () => {
             </svg>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="26"
+              width="25"
               height="25"
               fill="none"
+              className="mr-2"
             >
               <path
                 fill="#E9501D"
@@ -53,6 +55,7 @@ const Footer = () => {
               width="26"
               height="25"
               fill="none"
+              className="mr-2"
             >
               <path
                 fill="#fff"
@@ -64,6 +67,7 @@ const Footer = () => {
               width="25"
               height="25"
               fill="none"
+              className="mr-2"
             >
               <path
                 stroke="#fff"
@@ -87,8 +91,62 @@ const Footer = () => {
             </svg>
           </div>
         </div>
-        <div>inside div2</div>
-        <div>inside div3</div>
+        <div className="flex gap-20 items-center">
+          <div>
+            Quick Links
+            <div className="text-xs mt-2 pt-2 text-slate-400 ">
+              <ul>
+                <li className="mb-1">About Us</li>
+                <li className="mb-1">FAQs</li>
+                <li className="mb-1">News and Media</li>
+                <li className="mb-1">Contact Us</li>
+                <li className="mb-1">Digital Videos</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            Resources
+            <div className="text-xs mt-3 text-slate-400 ">
+              <ul className="pb-2">
+                <li className="mb-2">Individuals & Families</li>
+                <li className="mb-2">Corporate Health Solutions</li>
+                <li className="mb-2">Health Incurrence</li>
+                <li className="mb-2">Government Health Initiate</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            Our Information
+            <div className="text-xs mt-3 text-slate-400 ">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="25"
+                  fill="none"
+                >
+                  <path
+                    stroke="#E9501D"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    stroke-width="1.5"
+                    d="M17 20.652H7c-3 0-5-1.5-5-5v-7c0-3.5 2-5 5-5h10c3 0 5 1.5 5 5v7c0 3.5-2 5-5 5Z"
+                  />
+                  <path
+                    stroke="#E9501D"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    stroke-width="1.5"
+                    d="m17 9.152-3.13 2.5c-1.03.82-2.72.82-3.75 0L7 9.152"
+                  />
+                </svg>
+                <p>asdasdasdas</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div>div2</div>
       <div>div3</div>
