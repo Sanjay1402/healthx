@@ -208,7 +208,17 @@ const Footer = () => {
         </div>
       </div>
       <hr className={styles.customhr} />
-      <div>div3</div>
+      <div className="flex justify-between mx-6 px-7">
+        <div className="flex gap-10 m-4 p-2 text-xs">
+          <p>Terms and Condition</p>
+          <p>Privacy Policy</p>
+        </div>
+        <div>
+          <p className="text-xs m-4 p-2">
+            Copyright © 2024. All rights reserved.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
