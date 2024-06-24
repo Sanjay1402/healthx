@@ -9,3 +9,33 @@
 .logo {
   filter: invert(1) brightness(10000%);
 }
+.customhr {
+  width: 89%;
+  margin-left: auto; /* Center the line */
+  margin-right: auto; /* Center the line */
+  opacity: 20%;
+}
+.containerinput {
+  position: relative;
+  width: 300px; /* Adjust as needed */
+}
+
+.containerinput input {
+  width: 100%;
+  height: 40px; /* Adjust as needed */
+  padding-right: 80px; /* Make space for the button */
+  border-radius: 5px;
+}
+
+.containerinput button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 77%;
+  padding: 0 10px;
+  background-color: #e9501d;
+  border-radius: 8px;
+  color: white;
+  border: 3px solid white;
+  cursor: pointer;
+}

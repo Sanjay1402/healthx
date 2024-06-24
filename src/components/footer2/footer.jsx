@@ -183,7 +183,7 @@ const Footer = () => {
                       d="M3.62 8.642c1.97-8.66 14.8-8.65 16.76.01 1.15 5.08-2.01 9.38-4.78 12.04a5.194 5.194 0 0 1-7.21 0c-2.76-2.66-5.92-6.97-4.77-12.05Z"
                     />
                   </svg>
-                  <p>
+                  <p className="p-1">
                     Address: 4th floor, Elegant tower, plot no BC-2,
                     <br /> Khayaban-e- Iqbal, Block no 5, KDA <br />
                     Scheme No 5, Clifton, Karachi, Pakistan
@@ -194,7 +194,20 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div>div2</div>
+      <hr className={styles.customhr} />
+      <div className="flex justify-evenly">
+        <div>
+          <h1 className="font-medium	">Join or newsletter</h1>
+          <p className="text-xs mt-3 font-light">
+            Keep up to date with everything Reflect
+          </p>
+        </div>
+        <div className={styles.containerinput}>
+          <input type="text" value="" placeholder=" Your email" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+      <hr className={styles.customhr} />
       <div>div3</div>
     </div>
   );
