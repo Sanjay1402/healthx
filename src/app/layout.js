@@ -2,13 +2,13 @@ import { Inter } from "next/font/google";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
-import Footer from "@/components/footer/Footer";
+import Footer from "@/components/footer2/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
-})
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 
 export const metadata = {
   title: "Health X",
@@ -18,13 +18,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-       
       <body className={poppins.className}>
-      <Navbar/>  
+        <Navbar />
         {children}
-      <Footer />
-        
-        </body>
+        <Footer />
+      </body>
     </html>
   );
 }

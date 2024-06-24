@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+  background: #253239;
+  color: white;
+}
+.logo {
+  filter: invert(1) brightness(10000%);
+}
