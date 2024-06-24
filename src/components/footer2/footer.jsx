@@ -168,8 +168,8 @@ const Footer = () => {
                 <div className="flex text-xs mt-3 text-slate-400 ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="25"
+                    width="22"
+                    height="24"
                     fill="none"
                   >
                     <path
