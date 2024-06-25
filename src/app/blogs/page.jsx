@@ -317,9 +317,40 @@ endpoints. today announced that it...</p>
           </Card>
       
        </div>
-
+            
+       
 
       </div>
+      <div className="flex justify-center mb-10">
+      <nav>
+          <ul class="flex gap-3 items-center -space-x-px h-8 text-sm">
+          
+            <li>
+              <a href="#" class=" bg_orange flex items-center justify-center px-3 h-8 leading-tight text-white bg-white border border-gray-300 hover:bg-gray-100 hover:bg_orange dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:bg_orange dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
+            </li>
+            <li>
+              <a href="#"  class="z-10 flex items-center justify-center px-3 h-8 leading-tight borderbg-white border border-gray-300 hover:bg_orange dark:bg-gray-700 dark:text-white">3</a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg_orange hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">4</a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg_orange hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">5</a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg_orange hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                <span class="sr-only">Next</span>
+                <svg class="w-2.5 h-2.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        </div>
 
       <AppBanner />
     </main>
