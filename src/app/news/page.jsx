@@ -20,7 +20,7 @@ const Page = () => {
       <div className="">
         <CurrentPage pages_text={pages_text} />
       </div>
-      <div className="flex mt-20 mb-10 justify-between">
+      <div className="flex mt-20 mb-10 justify-between flex-wrap">
         <div className="">
           <div className="text-3xl mb-4 font-bold">
             <span className="orange">News &</span>{" "}
@@ -33,8 +33,8 @@ const Page = () => {
         <div className="flex">
           <div className="mr-4 opacity_text_orange">01</div>
           <div>
-            <div className="font-medium text-lg text-nowrap">Blogs</div>
-            <div className="font-light text-lg text-nowrap">
+            <div className="font-medium text-lg text-wrap">Blogs</div>
+            <div className="font-light text-lg text-wrap">
               We are committed to your Health
             </div>
           </div>
@@ -102,7 +102,7 @@ const Page = () => {
         </div>
       </div>
       <div className="">
-        <div className="flex mt-20 mb-5 justify-between">
+        <div className="flex mt-20 mb-5 justify-between flex-wrap">
           <div className="">
             <div className="text-3xl mb-4 font-bold">
               <span className="orange">Television</span>{" "}
@@ -122,7 +122,7 @@ const Page = () => {
           </div>
         </div>
         <div className="">
-          <div className="mb-5 flex justify-between">
+          <div className="mb-5 flex justify-between flex-wrap">
             <div>
               <p className="text-xs">Jan 11:24</p>
               <h1 className="text-xl font-medium">Dawn News</h1>
@@ -169,35 +169,41 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className="flex pb-2 mb-2">
-        <div className="m-2">
-          <span className="green font-bold text-4xl ">Our</span>{" "}
-          <span className="orange font-bold text-4xl">Digital Videos</span>
-          <h2 className="font-light text-xl mt-2">
-            Innovating to serve you better.
-          </h2>
+      <div className="flex mb-1 flex-wrap">
+        <div className="flex items-end">
+          <div className="h-full flex flex-col items-center justify-center">
+            <div>
+              <span className="green font-bold text-4xl text-wrap">Our</span>{" "}
+              <span className="orange font-bold text-4xl text-wrap">
+                Digital Videos
+              </span>
+              <h2 className="font-light text-xl mt-2 text-wrap">
+                Innovating to serve you better.
+              </h2>
+            </div>
+          </div>
         </div>
-        <div className="">
+        <div className={styles.box}>
           <a href="#">
             <img class="rounded-t-lg" src="/Rectangle17.png" alt="" />
           </a>
-          <p className="orange font-normal ml-2 pl-3">
+          <p className="orange font-normal ml-2 pl-3 text-wrap">
             Tired of Unnecessary High Costs?
           </p>
         </div>
-        <div className="">
+        <div className={styles.box}>
           <a href="#">
             <img class="rounded-t-lg" src="/Rectangle17.png" alt="" />
           </a>
-          <p className="orange font-normal ml-2 pl-3">
+          <p className="orange font-normal ml-2 pl-3 text-wrap">
             Tired of Unnecessary High Costs?
           </p>
         </div>
-        <div className="">
+        <div className={styles.box}>
           <a href="#">
             <img class="rounded-t-lg" src="/Rectangle17.png" alt="" />
           </a>
-          <p className="orange font-normal ml-2 pl-3">
+          <p className="orange font-normal ml-2 pl-3 text-wrap">
             Tired of Unnecessary High Costs?
           </p>
         </div>
