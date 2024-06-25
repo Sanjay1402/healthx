@@ -68,7 +68,7 @@ const Page = () => {
           <Card />
         </div>
       </div> */}
-      <div className="flex justify-around">
+      <div className="flex justify-around flex-wrap">
         <div className="flex flex-col justify-evenly">
           <Card img={images.img} />
           <div className="">
@@ -169,7 +169,7 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className="flex">
+      <div className="flex pb-2 mb-2">
         <div className="m-2">
           <span className="green font-bold text-4xl ">Our</span>{" "}
           <span className="orange font-bold text-4xl">Digital Videos</span>
@@ -178,11 +178,28 @@ const Page = () => {
           </h2>
         </div>
         <div className="">
-          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-              <img class="rounded-t-lg" src="/Rectangle17.png" alt="" />
-            </a>
-          </div>
+          <a href="#">
+            <img class="rounded-t-lg" src="/Rectangle17.png" alt="" />
+          </a>
+          <p className="orange font-normal ml-2 pl-3">
+            Tired of Unnecessary High Costs?
+          </p>
+        </div>
+        <div className="">
+          <a href="#">
+            <img class="rounded-t-lg" src="/Rectangle17.png" alt="" />
+          </a>
+          <p className="orange font-normal ml-2 pl-3">
+            Tired of Unnecessary High Costs?
+          </p>
+        </div>
+        <div className="">
+          <a href="#">
+            <img class="rounded-t-lg" src="/Rectangle17.png" alt="" />
+          </a>
+          <p className="orange font-normal ml-2 pl-3">
+            Tired of Unnecessary High Costs?
+          </p>
         </div>
       </div>
     </main>
