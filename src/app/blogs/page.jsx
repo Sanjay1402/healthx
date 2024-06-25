@@ -16,6 +16,15 @@ import {
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu"
 
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+
 
 let pages_text = {start:"Homepage", end:"Blogs"}
 
@@ -166,8 +175,21 @@ const page = () => {
       </div>
 
 
-      <div className='container mx-auto'></div>
-      <div className='mx-80'></div>
+      <div className='grid grid-cols-2'></div>
+      <div className='mx-80'>
+      <Card>
+        <CardHeader>
+          <CardTitle>Card Title</CardTitle>
+          <CardDescription>Card Description</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <p>Card Content</p>
+        </CardContent>
+        <CardFooter>
+          <p>Card Footer</p>
+        </CardFooter>
+      </Card>
+      </div>
     </div>
     <AppBanner />
 
