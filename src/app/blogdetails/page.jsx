@@ -237,21 +237,24 @@ const Page = ({}) => {
       </div>
       <div className="">
         <div className="mb-5 flex justify-between flex-wrap">
-          <div>
+          <div className="">
             <p className="text-xs">Jan 11:24</p>
             <h1 className="text-sm font-medium">
               Your Daily Dose of Medical Wisdom
             </h1>
 
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div className="max-w-sm my-3">
               <a href="#">
                 <img
-                  class="rounded-t-lg"
+                  className="rounded-t-lg my-2"
                   src="/Rectangle37(big).png"
                   alt=""
                   width={300}
                 />
               </a>
+              <span class="bg-[#D3FFF9] text-[#1F8B7B] text-xs font-light me-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">
+                News
+              </span>
             </div>
           </div>
           <div>
@@ -259,15 +262,18 @@ const Page = ({}) => {
             <h1 className="text-sm font-medium">
               Empowering Communities through Health Education
             </h1>
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div className="max-w-sm my-3">
               <a href="#">
                 <img
-                  class="rounded-t-lg"
+                  className="rounded-t-lg my-2"
                   src="/Rectangle37(big).png"
                   alt=""
                   width={300}
                 />
               </a>
+              <span class="bg-[#D3FFF9] text-[#1F8B7B] text-xs font-light me-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">
+                News
+              </span>
             </div>
           </div>
           <div>
@@ -275,15 +281,18 @@ const Page = ({}) => {
             <h1 className="text-sm font-medium">
               Empowering Communities through Health Education
             </h1>
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div className="max-w-sm my-3">
               <a href="#">
                 <img
-                  class="rounded-t-lg"
+                  className="rounded-t-lg my-2"
                   src="/Rectangle37(big).png"
                   alt=""
                   width={300}
                 />
               </a>
+              <span class="bg-[#D3FFF9] text-[#1F8B7B] text-xs font-light me-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">
+                News
+              </span>
             </div>
           </div>
         </div>
