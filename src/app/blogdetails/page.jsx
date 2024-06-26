@@ -229,7 +229,7 @@ const Page = ({}) => {
       <div className="flex mt-10 mb-5 justify-start flex-wrap">
         <div className="">
           <div className="text-3xl mb-3 font-bold">
-            <span className="orange">Related</span>{" "}
+            <span className="orange">Related Posts</span>{" "}
             <span className="green">Posts</span>
           </div>
           <div className="text-2xl font-light mb-3">Blogs </div>
@@ -239,29 +239,50 @@ const Page = ({}) => {
         <div className="mb-5 flex justify-between flex-wrap">
           <div>
             <p className="text-xs">Jan 11:24</p>
-            <h1 className="text-xl font-medium">Dawn News</h1>
+            <h1 className="text-sm font-medium">
+              Your Daily Dose of Medical Wisdom
+            </h1>
 
             <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               <a href="#">
-                <img class="rounded-t-lg" src="Rectangle37(big).png" alt="" />
+                <img
+                  class="rounded-t-lg"
+                  src="/Rectangle37(big).png"
+                  alt=""
+                  width={300}
+                />
               </a>
             </div>
           </div>
           <div>
             <p className="text-xs">Jan 11:24</p>
-            <h1 className="text-xl font-medium">Dawn News</h1>
+            <h1 className="text-sm font-medium">
+              Empowering Communities through Health Education
+            </h1>
             <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               <a href="#">
-                <img class="rounded-t-lg" src="/Rectangle37(big).png" alt="" />
+                <img
+                  class="rounded-t-lg"
+                  src="/Rectangle37(big).png"
+                  alt=""
+                  width={300}
+                />
               </a>
             </div>
           </div>
           <div>
             <p className="text-xs">Jan 11:24</p>
-            <h1 className="text-xl font-medium">Dawn News</h1>
+            <h1 className="text-sm font-medium">
+              Empowering Communities through Health Education
+            </h1>
             <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               <a href="#">
-                <img class="rounded-t-lg" src="/Rectangle37(big).png" alt="" />
+                <img
+                  class="rounded-t-lg"
+                  src="/Rectangle37(big).png"
+                  alt=""
+                  width={300}
+                />
               </a>
             </div>
           </div>
