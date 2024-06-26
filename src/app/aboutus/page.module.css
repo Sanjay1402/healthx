@@ -1,0 +1,42 @@
+.card_custom_style{
+    box-shadow: none;
+    border: none;
+    width: 25rem;
+}
+
+.green_badge{
+    background-color: #D3FFF9;
+    color: #1F8B7B;
+    padding: 0.5rem 1rem ;
+    
+  }
+.input_email{
+    background-color: #F9F9F9;
+}
+
+.my_svg{
+    transform: rotate(90deg);
+}
+
+.bg_orange{
+    color: #E9501D ;
+    
+}
+
+.dark_card{
+   
+    background-color:  #253239;
+    color: white;
+    border-color: #253239;
+    filter: drop-shadow(0px 3.53191px 15.5404px rgba(0, 0, 0, 0.1));
+}
+.dark{
+    background-color:  #253239;
+}
+
+
+.custom_container{
+    width: 99.2vw;
+    margin-left: -11.5rem;
+    padding: 4rem;
+}
