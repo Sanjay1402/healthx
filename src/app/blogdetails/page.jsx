@@ -1,6 +1,9 @@
 import CurrentPage from "@/components/currentpage/CurrentPage";
 import Image from "next/image";
 import styles from "./details.module.css";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button";
 const Page = ({}) => {
   let pages_text = { start: "Homepage", end: "Blogs" };
   return (
@@ -27,8 +30,8 @@ const Page = ({}) => {
             />
           </div>
         </div>
-        <div className="flex flex-col gap-20 mr-5 pr-5 flex-wrap">
-          <div className="max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 p-4 flex flex-wrap">
+        <div className="flex flex-col gap-y-32 mr-2 pr-2 flex-wrap">
+          <div className="max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 p-5 m-2 flex flex-wrap">
             <p className="green pr-5 m-2 text-xl font-medium">On this Page</p>
             <div className="flex flex-wrap items-center justify-center">
               <ul className="list-disc list-inside text-wrap">
@@ -117,6 +120,111 @@ const Page = ({}) => {
           rising cost of healthcare in Pakistan and explore potential solutions
           to address this pressing issue.
         </p>
+      </div>
+      <div className="w-8/12 my-8">
+        <h1 className="font-semibold text-lg">
+          Understanding the Factors Behind Rising Healthcare Costs:
+        </h1>
+        <p className="font-light">
+          Several factors contribute to the escalating cost of healthcare in
+          Pakistan
+        </p>
+      </div>
+      <div className="w-8/12 my-8">
+        <h1 className="font-light orange text-lg">Medical Advancements</h1>
+        <p className="font-light">
+          While medical innovations have undoubtedly improved patient outcomes
+          and quality of care, they often come at a hefty price. Advanced
+          diagnostic tools, cutting-edge treatments, and sophisticated medical
+          devices contribute significantly to healthcare expenditure.
+        </p>
+      </div>
+      <div className="w-8/12 my-8">
+        <h1 className="font-light orange text-lg">Aging Population</h1>
+        <p className="font-light">
+          With improvements in healthcare leading to longer life expectancy, the
+          proportion of elderly individuals requiring medical attention has
+          increased. The elderly often require more intensive and specialized
+          care, driving up healthcare costs.
+        </p>
+      </div>
+      <div className="w-8/12 my-8">
+        <h1 className="font-light orange text-lg">Increased Demand </h1>
+        <p className="font-light">
+          As awareness about healthcare grows and access to medical facilities
+          improves, there is a surge in demand for healthcare services. This
+          increased demand exerts pressure on existing healthcare
+          infrastructure, leading to higher costs to meet the growing needs of
+          the population.
+        </p>
+      </div>
+      <div className="w-8/12 my-8 flex  justify-between">
+        <div>
+          <Image src="/Rectangle 201.png" alt="" width={370} height={100} />
+        </div>
+        <div>
+          <Image src="/Rectangle 200.png" alt="" width={370} height={100} />
+        </div>
+      </div>
+      <div className="text-wrap">
+        <div className="w-8/12 my-8">
+          <h1 className="font-semibold text-lg">
+            Is It Too Late to Bring Costs Down?{" "}
+          </h1>
+          <p className="font-light">
+            While the challenge of controlling healthcare costs may seem
+            daunting, it is not insurmountable. Several strategies can be
+            implemented to address this issue:
+          </p>
+        </div>
+        <div className="w-8/12 my-8">
+          <h1 className="font-light orange text-lg">
+            Embrace Preventive Healthcare:
+          </h1>
+          <p className="font-light">
+            Investing in preventive measures and promoting healthy lifestyle
+            choices can reduce the incidence of chronic diseases and lower
+            healthcare costs in the long run. Public health initiatives focusing
+            on vaccination campaigns, smoking cessation programs, and nutrition
+            education can lead to significant cost savings by preventing costly
+            medical interventions.
+          </p>
+        </div>
+        <div className="w-8/12 my-8">
+          <h1 className="font-light orange text-lg">
+            Promote Generic Medications
+          </h1>
+          <p className="font-light">
+            Encouraging the use of generic medications over brand-name drugs can
+            significantly reduce medication costs for patients. Government
+            policies that promote generic drug manufacturing and increase access
+            to affordable alternatives can help mitigate the financial burden on
+            individuals.
+          </p>
+        </div>
+      </div>
+      <div className="flex flex-col flex-wrap justify-start">
+        <div className="text-xl my-4 py-5">
+          <h1 className="font-bold text-3xl green">Post a Comment</h1>
+          <p className="font-light">Understanding the Impact and Solutions</p>
+        </div>
+
+        <div className="mt-10 mb-10 text-center ">
+          <div className="grid grid-cols-2 gap-5 ">
+            <Input
+              className="mb-5 orange-border"
+              type="text"
+              placeholder="Name"
+            />
+            <Input
+              className="mb-5 orange-border"
+              type="email"
+              placeholder="Email"
+            />
+          </div>
+          <Textarea className="mb-5 orange-border" placeholder="Message" />
+          <Button className="bg_orange">Send a message</Button>
+        </div>
       </div>
     </main>
   );
