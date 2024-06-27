@@ -4,6 +4,7 @@ import Card from "@/components/card(Taha)/Card";
 import styles from "./news.module.css";
 import Noimgcard from "@/components/card(Taha)/Noimgcard";
 import Image from "next/image";
+import Slider from "@/components/radioslider/Slider";
 
 const Page = () => {
   let pages_text = { start: "Homepage", end: "News And Media" };
@@ -152,6 +153,7 @@ const Page = () => {
               </div>
             </div>
           </div>
+          <Slider />
         </div>
         <div className="">{/* div left for carousal */}</div>
         <div className="m-10">
@@ -170,7 +172,7 @@ const Page = () => {
         </div>
       </div>
       <div className="flex mb-1 flex-wrap">
-        <div className="flex items-end">
+        <div className="flex">
           <div className="h-full flex flex-col items-center justify-center">
             <div>
               <span className="green font-bold text-4xl text-wrap">Our</span>{" "}
@@ -180,6 +182,9 @@ const Page = () => {
               <h2 className="font-light text-xl mt-2 text-wrap">
                 Innovating to serve you better.
               </h2>
+            </div>
+            <div className="flex my-2 pt-5">
+              <Slider />
             </div>
           </div>
         </div>
