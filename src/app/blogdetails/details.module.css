@@ -1,0 +1,14 @@
+.healthx {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22.6299px;
+  line-height: 111.64%;
+  /* or 36px */
+
+  background: linear-gradient(90deg, #1f8b7b 0%, #e9501d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}

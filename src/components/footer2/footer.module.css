@@ -1,8 +1,4 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 500px;
   background: #253239;
   color: white;
 }
@@ -17,25 +13,44 @@
 }
 .containerinput {
   position: relative;
-  width: 300px; /* Adjust as needed */
+  width: auto; /* Adjust as needed */
 }
 
 .containerinput input {
-  width: 100%;
+  width: 100%; /* Full width input */
   height: 40px; /* Adjust as needed */
   padding-right: 80px; /* Make space for the button */
   border-radius: 5px;
+  border: 1px solid #ccc; /* Example border style */
+  box-sizing: border-box; /* Ensure padding and border are included in width */
 }
 
 .containerinput button {
   position: absolute;
   right: 0;
   top: 0;
-  height: 77%;
-  padding: 0 10px;
+  height: 75%; /* Adjust height for button */
+  padding: 0 5px;
   background-color: #e9501d;
   border-radius: 8px;
   color: white;
-  border: 3px solid white;
+  border: 2px solid rgb(255, 255, 255); /* Remove border for cleaner look */
   cursor: pointer;
+  box-sizing: border-box; /* Ensure padding is included in button's width */
+}
+
+@media (max-width: 768px) {
+  .containerinput {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .containerinput input {
+    padding-right: 60px; /* Adjust padding for smaller screens */
+  }
+
+  .containerinput button {
+    position: relative; /* Change position to relative for stacking */
+    width: 100%; /* Full width button on smaller screens */
+    margin-top: 10px; /* Add margin top for spacing */
+  }
 }
