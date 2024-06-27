@@ -2,8 +2,10 @@ import Image from "next/image";
 import styles from "./footer.module.css";
 const Footer = () => {
   return (
-    <div className={styles.container}>
-      <div className="flex justify-around">
+    <div
+      className={`flex flex-col justify-between flex-wrap ${styles.container}`}
+    >
+      <div className="flex justify-around flex-wrap">
         <div className="flex flex-col pt-11">
           <div className="flex">
             <Image
@@ -91,10 +93,10 @@ const Footer = () => {
             </svg>
           </div>
         </div>
-        <div className="flex gap-20 items-center">
+        <div className="flex gap-20 items-center flex-wrap">
           <div>
             Quick Links
-            <div className="text-xs mt-2 pt-2 text-slate-400 ">
+            <div className=" text-sm md:text-xs lg:text-xs mt-2 pt-2 text-slate-400 ">
               <ul>
                 <li className="mb-1">About Us</li>
                 <li className="mb-1">FAQs</li>
@@ -106,7 +108,7 @@ const Footer = () => {
           </div>
           <div>
             Resources
-            <div className="text-xs mt-3 text-slate-400 ">
+            <div className="text-sm md:text-xs lg:text-xs  mt-3 text-slate-400 ">
               <ul className="pb-2">
                 <li className="mb-2">Individuals & Families</li>
                 <li className="mb-2">Corporate Health Solutions</li>
@@ -119,7 +121,7 @@ const Footer = () => {
             Our Information
             <ul>
               <li>
-                <div className="flex text-xs mt-3 text-slate-400 ">
+                <div className="flex text-sm md:text-xs lg:text-xs  mt-3 text-slate-400 flex-wrap">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -147,7 +149,7 @@ const Footer = () => {
                 </div>
               </li>
               <li>
-                <div className="flex text-xs mt-3 text-slate-400 ">
+                <div className="flex text-xs mt-3 text-slate-400 flex-wrap">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -165,7 +167,7 @@ const Footer = () => {
                 </div>
               </li>
               <li>
-                <div className="flex text-xs mt-3 text-slate-400 ">
+                <div className="flex text-xs mt-3 text-slate-400 flex-wrap ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -195,7 +197,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className={styles.customhr} />
-      <div className="flex justify-evenly">
+      <div className="flex justify-evenly flex-wrap my-4 md:my-2 lg:my-2">
         <div>
           <h1 className="font-medium	">Join or newsletter</h1>
           <p className="text-xs mt-3 font-light">
@@ -208,13 +210,13 @@ const Footer = () => {
         </div>
       </div>
       <hr className={styles.customhr} />
-      <div className="flex justify-between mx-6 px-7">
-        <div className="flex gap-10 m-4 p-2 text-xs">
+      <div className="flex justify-between mx-6 px-7 flex-wrap">
+        <div className="flex gap-10 m-4 p-2 md:text-xs lg:text-sm text-wrap flex-wrap">
           <p>Terms and Condition</p>
           <p>Privacy Policy</p>
         </div>
         <div>
-          <p className="text-xs m-4 p-2">
+          <p className="md:text-xs lg:text-sm m-4 p-2">
             Copyright © 2024. All rights reserved.
           </p>
         </div>
