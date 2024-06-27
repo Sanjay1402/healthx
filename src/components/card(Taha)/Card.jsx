@@ -20,7 +20,7 @@ const Card = (props) => {
             href="#"
             class="inline-flex items-center  py-2 text-sm font-medium text-center text-white orange rounded-lg"
           >
-            <b> Keep Reading</b>
+            <b>Keep Reading</b>
           </a>
         </div>
       </div>
