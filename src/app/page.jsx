@@ -10,17 +10,106 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Slider from "@/components/radioslider/Slider";
+
 
 export default function Home() {
   return (
-    <div className={styles.test}>
-      homepage
-      <AppBanner />
-      <Values />
-      <ContactBanner />
+    <div className="container">
+     
+      <div className='flex justify-around mt-20 mb-20'>
+        <div className=''>Trusted by more than <span className='orange'>500,000+ <br></br></span>
+        active users across the globe</div>
+
+        <div className='flex'>
+            <div className='green text-6xl font-medium'>50K</div>
+            
+            <div className='mt-1 ms-1'>
+                
+                <div>
+                    Ratings
+                </div>
+                <div>
+                    User
+                </div>
+            </div>
+        </div>
+        <div className='flex'>
+            <div className='green text-6xl font-medium'>95K</div>
+            
+            <div className='mt-1 ms-1'>
+                
+                <div>
+                Experienced
+                </div>
+                <div>
+                Clinics
+                </div>
+            </div>
+        </div>
+
+
+        <div className='flex'>
+            <div className='green text-6xl font-medium'>80%</div>
+            
+            <div className='mt-1 ms-1'>
+                
+                <div>
+                Experienced
+                </div>
+                <div>
+                Clinics
+                </div>
+            </div>
+        </div>
+
+    </div>
+     
+    <div className='flex gap-20 mb-10'>
+        <div className=' w-2/6'>
+        <div className='text-4xl font-light mb-4'>Visionaries of Health</div>
+        <div className='text-5xl mb-4 font-bold'><span className='orange'>Your </span> <span className='green'>Partners </span><span className='orange'>in Health</span></div>
+        <div className='font-light text-xl'>As a multinational healthcare management company, we take pride in our team of experienced healthcare professionals who specialize in primary healthcare and patient management.</div>
+        <div className='mt-5 justify-start'></div>
+        <Slider />
+        </div>
+
+        <div className='flex '>
+        <div className='pb-16'>
+        <Image
+              src="/doctors/1.png"
+              alt=""
+              height="406"
+              width="367"
+              className='pb-2'
+              
+            />
+        </div>
+        <div>
+        <Image
+              src="/doctors/2.png"
+              alt=""
+              height="406"
+              width="367"
+              
+            />
+        </div>
+        <div>
+        <Image
+              src="/doctors/3.png"
+              alt=""
+              height="300"
+              width="367"
+              
+            />
+        </div>
+
+        </div>
+        </div>
+     
       <AppIntegration />
       {/* Frequently Asked Component */}
-      <div className="container">
+     
         <div className="flex justify-between">
           <div className="text-4xl mb-4 font-bold ">
             <span className="green">FREQUENTLY</span>{" "}
@@ -114,7 +203,9 @@ export default function Home() {
             </AccordionItem>
           </Accordion>
         </div>
+        <AppBanner />
+        
       </div>
-    </div>
+    
   );
 }

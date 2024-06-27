@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const AppIntegration = () => {
   return (
-    <div className={styles.container}>
+    <div className=''>
       <div className={styles.upper_part}>
         <div className={styles.five}>05</div>
         <div className={styles.integration_container}>
@@ -21,13 +21,13 @@ const AppIntegration = () => {
           <Image
             src="/Rectangle 18.png"
             alt=""
-            height="551"
+            height="581"
             width="671"
             className={styles.image}
           />
         </div>
 
-        <div>
+        <div className="ms-10">
           <div className={styles.bottom_top}>
             <span className={styles.greenheading}>INTEGRATED </span>
             <span className={styles.orangeheading}>HEALTHCARE</span>
