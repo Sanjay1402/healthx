@@ -96,9 +96,6 @@ const page = () => {
                 </div>
             </div>
         </div>
-
-
-
         <div className='flex'>
             <div className='green text-6xl font-medium'>95K</div>
             
@@ -129,10 +126,6 @@ const page = () => {
         </div>
 
     </div>
-
-
-  
-
    
         </div>
 
@@ -253,8 +246,15 @@ const page = () => {
     </div>
     </div>
     <div className='container'>
+    <Image
+    src="/bigdna.png"
+    alt=""
+    height='1360'
+    width='1170'
+    className={styles.bigdna}
+  /> 
     <Values />
-    <AppBanner />
+    
     <div className="">
         <div className="flex mt-20 mb-20 justify-between">
           <div className="flex ml-auto">
@@ -313,7 +313,7 @@ const page = () => {
         </div>
     
 
-       
+       <div className='container'><AppBanner /></div>
         
    
        

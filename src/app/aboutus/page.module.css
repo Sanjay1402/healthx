@@ -35,6 +35,17 @@
 }
 
 
+.bigdna{
+    /* Rectangle 37 */
+
+    position: absolute;
+    left: 0px;
+    /*\\ top: 568.97px; */
+    z-index: -1;
+    transform: rotate(-5deg);
+
+}
+
 .custom_container{
     
     padding: 4rem;
