@@ -8,15 +8,15 @@ const Slider = ({}) => {
     setSelectedOption(event.target.value);
   };
   return (
-    <div className="flex justify-center">
+    <div className="flex self-start">
       <div className="mx-1">
         <input
           type="radio"
           name="radioGroup"
           className="accent-orange-600"
           value="option1"
-          checked={selectedOption === "option1"}
-          onChange={handleRadioChange}
+          checked= 'option1'
+          // onChange={handleRadioChange}
         />
       </div>
       <div className="mx-1">

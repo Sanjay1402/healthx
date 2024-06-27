@@ -14,6 +14,8 @@ import {
 import Values from '@/components/values/Values';
 import { Button } from "@/components/ui/button"
 import AppBanner from '@/components/appbanner/AppBanner';
+import Slider from '@/components/radioslider/Slider';
+
 
 let pages_text = { start: "Homepage", end: "About" };
 
@@ -264,6 +266,7 @@ const page = () => {
               </div>
             </div>
           </div>
+          
         </div>
       </div>
       </div>
@@ -273,6 +276,8 @@ const page = () => {
         <div className='text-4xl font-light mb-4'>Visionaries of Health</div>
         <div className='text-5xl mb-4 font-bold'><span className='orange'>Your </span> <span className='green'>Partners </span><span className='orange'>in Health</span></div>
         <div className='font-light text-xl'>As a multinational healthcare management company, we take pride in our team of experienced healthcare professionals who specialize in primary healthcare and patient management.</div>
+        <div className='mt-5 justify-start'></div>
+        <Slider />
         </div>
         <div className='flex '>
         <div className='pb-16'>
@@ -308,8 +313,8 @@ const page = () => {
         </div>
     
 
-          
-
+       
+        
    
        
     </>
