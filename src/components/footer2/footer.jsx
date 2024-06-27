@@ -203,7 +203,7 @@ const Footer = () => {
           </p>
         </div>
         <div className={styles.containerinput}>
-          <input type="text" value="" placeholder=" Your email" />
+          <input type="text" placeholder=" Your email" className="text-black" />
           <button>Subscribe</button>
         </div>
       </div>
