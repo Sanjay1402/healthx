@@ -153,7 +153,9 @@ const Page = () => {
               </div>
             </div>
           </div>
-          <Slider />
+          <div className="flex justify-center">
+            <Slider />
+          </div>
         </div>
         <div className="">{/* div left for carousal */}</div>
         <div className="m-10">
