@@ -1,6 +1,7 @@
 "use client";
 import vertex from "../shaders/vertex.glsl";
 import fragment from "../shaders/fragment.glsl";
+
 import * as THREE from "three";
 import { Suspense, useRef, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";

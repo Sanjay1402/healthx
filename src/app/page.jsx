@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import AppBanner from "@/components/appbanner/appBanner";
 import Values from "@/components/values/Values";
 import ContactBanner from "@/components/contactbanner/ContactBanner";
+
 import AppIntegration from "@/components/appintegration/AppIntegration";
 import {
   Accordion,
@@ -472,9 +473,17 @@ export default function Home() {
             {" "}
             <ul className="m-2 flex flex-col justify-evenly">
               <p className="mb-3"> All</p>
-              <li className="opacity-30 mb-3">NEWS</li>
-              <li className="opacity-30  mb-3">BLOGS</li>
-              <li className="opacity-30  mb-3">EVENTS</li>
+              <a href="/news">
+                {" "}
+                <li className="opacity-30 mb-3">NEWS</li>
+              </a>
+              <a href="/blogs">
+                {" "}
+                <li className="opacity-30  mb-3">BLOGS</li>
+              </a>
+              <a href="/events">
+                <li className="opacity-30  mb-3">EVENTS</li>
+              </a>
             </ul>
           </div>
           <div>
