@@ -13,12 +13,16 @@ import {
 } from "@/components/ui/accordion";
 import Slider from "@/components/radioslider/Slider";
 import Card from "@/components/card(Taha)/Card";
+import NewApp from "@/Model/Model";
 export default function Home() {
   return (
     <main>
       <div className={`container`}>
         <div className={styles.example}>
           <div className="flex flex-col bottom-left">
+            <div>
+              <NewApp />
+            </div>
             <div className="flex items-end p-2">
               <h1 className={styles.healthx}>Healthx Pakistan</h1>
             </div>

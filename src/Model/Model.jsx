@@ -14,7 +14,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Model(props) {
   const shaderMaterialRef = useRef(); // Reference to the shader material
-  const { nodes } = useGLTF("./assets/shiba/lopoly_dna.gltf");
+  const { nodes } = useGLTF("/lopoly_dna.gltf");
 
   const groupRef = useRef();
 
@@ -62,11 +62,11 @@ function Model(props) {
   }, [nodes, shaderMaterial]);
 
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} position={[0, 0, 0]}>
       <group ref={groupRef} />
       <group ref={groupRef} {...props} dispose={null}>
-        <group scale={0.01}>
-          <group position={[0, 0, 0]} rotation={[0, 0, 0]} scale={15}>
+        <group scale={[0.005, 0.005, 0.005]}>
+          <group position={[0, 0, 0]} rotation={[0, 0, 0]} scale={30}>
             <mesh
               geometry={nodes.DNA3.geometry}
               material={shaderMaterial}
@@ -105,7 +105,7 @@ function NewApp() {
     <div>
       <Canvas
         ref={imgref}
-        style={{ width: "100vw", height: "110vh", minHeight: "10vh" }}
+        style={{ width: "83vw", height: "100vh", minHeight: "10vh" }}
       >
         <Suspense fallback={null}>
           <directionalLight position={[1, 1, 1]} intensity={1} />
