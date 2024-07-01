@@ -1,5 +1,5 @@
 .container{
-    height: 45rem;
+    /* height: 45rem; */
     /* width: ; */
     background-image: linear-gradient(to right, #E9501D1F , #1F8B7B1F, #EBC6621F);
     display: flex;
@@ -10,6 +10,7 @@
     /* margin-right: 1.5rem; */
     margin-bottom: 3rem;
     position: relative;
+    overflow: hidden;
 
 
     
@@ -17,10 +18,11 @@
 
 .dna{
   position: absolute;
-  top: 0;
+  top: -10rem;
   left: 30rem;
   z-index: -1;
-  transform: rotate(-10.57deg);
+  transform: rotate(-120deg);
+  object-fit: contain;
 }
 .seven{
   color: #E9501D;
@@ -61,7 +63,7 @@
   font-weight: 400;
   font-size: 36px;
   margin-left: 2rem;
-  margin-top: 2rem;
+  margin-top: 0rem;
   /* line-height: 52; */
 }
 .healthsoltext{
@@ -81,7 +83,7 @@
 }
 
 .bottom_container{
-  margin-top: 5rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: row;
   /* justify-self: s; */
@@ -93,12 +95,12 @@
  margin-left: 10rem;
 }
 
-.approw{
+/* .approw{
  
   color: white;
   margin-left: 2rem;
   padding: 0;
-}
+} */
 
 /* .appstore{
   background-color: #000100;
@@ -107,12 +109,16 @@
   padding: 2px;
   border-radius: 10px;
 } */
-
+/* 
 .playstore{
   display: inline-block;
   margin-left: 2rem;
-}
+} */
 
-.space{
+/* .space{
   margin-left: 1rem;
+} */
+
+.left_part{
+  margin-left: 20rem;
 }

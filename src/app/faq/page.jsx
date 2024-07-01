@@ -6,11 +6,15 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import CurrentPage from '@/components/currentpage/CurrentPage'
+
+let pages_text = {start:"Homepage", end:"FAQ"}
 
 const page = () => {
     
   return (
     <main className='container'>
+      <CurrentPage pages_text={pages_text}/>
     <div className="">
         <div className='flex mt-40 mb-20 justify-between'>
         <div className=''>

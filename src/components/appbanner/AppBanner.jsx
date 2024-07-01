@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import Image from 'next/image'
 import styles from './appbanner.module.css'
@@ -7,10 +9,10 @@ const appBanner = () => {
     <div className={styles.container}>
 
         <Image
-            src="/Rectangle 5.png"
+            src="/bigdna.png"
             alt=""
             height='770'
-            width='660'
+            width='1000'
             className={styles.dna}
           /> 
 
@@ -62,24 +64,26 @@ const appBanner = () => {
           <div className={styles.foralltext}>For All</div>
           <p className={styles.leftp}>As a multinational healthcare management company, we take pride in our team <br/>of experienced healthcare professionals.</p>
       
-          <div className={styles.approw}>
+
+              <div className='flex gap-5 ms-5 mt-10'>
             
+              <Image
+                src="/appstore.png"
+                alt=""
+                height='63'
+                width='182' 
+              /> 
+              
             <Image
-              src="/appstore.png"
-              alt=""
-              height='63'
-              width='182' 
-            /> 
-            
-            <span className={styles.space}></span>
-          <Image
-              src="/playstore.png"
-              alt=""
-              height='63'
-              width='182' 
-            /> 
+                src="/playstore.png"
+                alt=""
+                height='63'
+                width='182' 
+              /> 
+
+            </div>
          
-          </div>
+          
       </div>
       <div className={styles.shimage}>
       <Image

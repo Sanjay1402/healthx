@@ -9,8 +9,8 @@ const ContactBanner = () => {
     <Image
         src="/Rectangle 5.png"
         alt=""
-        height='770'
-        width='660'
+        height='1060'
+        width='870'
         className={styles.dna}
       /> 
     
