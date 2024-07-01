@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <Link href="/" className={styles.logo}>
-      <div>
+      <div className='flex'>
         <Image
               src="/logo 1.png"
               alt=""
@@ -39,6 +39,8 @@ const Navbar = () => {
               width="103"
               className={styles.image}
             />
+        
+        <span className='flex mt-9'>
         <Image
             src="/logo 2.png"
             alt=""
@@ -46,14 +48,19 @@ const Navbar = () => {
             width="122"
             className={styles.logo2}
           />  
-          <span className={styles.bar}>|</span>  
+
+          
+<div className={styles.bar}></div>  
+          
            <Image
             src="/logo 3.png"
             alt=""
             height="23"
             width="105"            
             className={styles.logo3}
+            
           />
+
         <Image
             src="/logo 4.png"
             alt=""
@@ -61,6 +68,9 @@ const Navbar = () => {
             width="105"
             className={styles.logo4}
           />  
+
+          </span>
+          
       </div>
              
       </Link>

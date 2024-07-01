@@ -15,7 +15,7 @@ import Slider from "@/components/radioslider/Slider";
 import Card from "@/components/card(Taha)/Card";
 export default function Home() {
   return (
-    <main>
+    <main className="">
       <div className={`container`}>
         <div className={styles.example}>
           <div className="flex flex-col bottom-left">
@@ -39,7 +39,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex justify-around mt-20 mb-20">
+        <div className="flex justify-around mb-32 ">
           <div className="">
             Trusted by more than{" "}
             <span className="orange">
@@ -47,15 +47,18 @@ export default function Home() {
             </span>
             active users across the globe
           </div>
+          
+          <div className="grid md:grid-cols-4 sm:grid-cols-2 place-items-center ">
+            
+          <div className="flex ">
+            <div className="green text-6xl font-medium ">50K</div>
 
-          <div className="flex">
-            <div className="green text-6xl font-medium">50K</div>
-
-            <div className="mt-1 ms-1">
+            <div className="mt-1 ms-1 ">
               <div>Ratings</div>
               <div>User</div>
             </div>
           </div>
+         
           <div className="flex">
             <div className="green text-6xl font-medium">95K</div>
 
@@ -73,6 +76,9 @@ export default function Home() {
               <div>Clinics</div>
             </div>
           </div>
+
+
+        </div>
         </div>
       </div>
       <div className={`container py-10  ${styles.containerdiv} `}>
@@ -302,7 +308,7 @@ export default function Home() {
         {/* </div> */}
       </div>
       <div className="container mt-7 p-5">
-        <div className="flex justify-end my-5 py-5 text-wrap flex-wrap">
+        <div className="flex md:justify-end my-5 py-5 text-wrap flex-wrap sm:justify-start">
           <span className="orange text-5xl font-bold opacity-20 mx-2 px-2">
             03
           </span>
@@ -311,12 +317,12 @@ export default function Home() {
             <p>We are committed to your health</p>
           </div>
         </div>
-        <div className="flex gap-20 mb-10">
-          <div className=" w-2/6">
+        <div className="flex gap-20 mb-10 md:flex-row sm:flex-col">
+          <div className=" w-2/6 sm:mx-auto sm:w-full">
             <div className="text-4xl font-light mb-4">
               Visionaries of Health
             </div>
-            <div className="text-5xl mb-4 font-bold">
+            <div className="text-5xl mb-4 font-bold sm:m">
               <span className="orange">Your </span>{" "}
               <span className="green">Partners </span>
               <span className="orange">in Health</span>
@@ -330,7 +336,7 @@ export default function Home() {
             <Slider />
           </div>
 
-          <div className="flex ">
+          <div className="lg:flex md:grid md:grid-cols-2 sm:mx-auto">
             <div className="pb-16">
               <Image
                 src="/doctors/1.png"

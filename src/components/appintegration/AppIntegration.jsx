@@ -16,7 +16,9 @@ const AppIntegration = () => {
           </span>
         </div>
       </div>
-      <div className={styles.bottom_part}>
+
+
+      <div className={`${styles.bottom_part}  md:flex-row sm:flex-col`}>
         <div>
           <Image
             src="/Rectangle 18.png"
@@ -27,9 +29,9 @@ const AppIntegration = () => {
           />
         </div>
 
-        <div className="ms-10">
-          <div className={styles.bottom_top}>
-            <span className={styles.greenheading}>INTEGRATED </span>
+        <div className="ms-10 flex flex-col">
+          <div className={`${styles.bottom_top} md:mt-0 sm:mt-5`}>
+            <span className={`${styles.greenheading}`}>INTEGRATED </span>
             <span className={styles.orangeheading}>HEALTHCARE</span>
           </div>
           <div className={styles.management_text}>MANAGEMENT APPLICATION</div>
@@ -109,7 +111,7 @@ const AppIntegration = () => {
               Healthcare services offered in both English and Urdu
               </li>
           </ul>
-          <button className={styles.button2} >Download App</button>
+          <button className={`${styles.button2} w-52  `} >Download App</button>
         </div>
       </div>
     </div>
