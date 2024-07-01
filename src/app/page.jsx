@@ -80,6 +80,68 @@ export default function Home() {
 
         </div>
         </div>
+        <div className="flex sm:justify-between md:justify-between lg:justify-around container flex-wrap">
+          <div className="flex flex-wrap">
+            <div className="flex items-start">
+              {" "}
+              <span className="orange text-5xl font-bold opacity-20 mx-2 px-2">
+                02
+              </span>
+            </div>
+            <div className="flex flex-col">
+              <span className="font-medium">About Us</span>
+              <span className="font-light">
+                We are committed to your Health
+              </span>
+            </div>
+          </div>
+          <div className="green text-3xl font-bold">
+            Healthcare <span className="orange">Management for All</span>
+            <p className="text-2xl font-light text-black">
+              A global approach in pakistan
+            </p>
+          </div>
+          <div className="flex mt-4 pt-4 flex-wrap sm:justify-center md:justify-end lg:justify-end">
+            <div className="w-1/2	text-sm font-light ">
+              Powered by TruDoc, Healthx is a global healthcare management
+              company providing high-quality primary healthcare services to all.
+              Our primary function as a healthcare management company in
+              Pakistan is to keep patients healthy and reduce costs for patients
+              and payers. To meet the diverse needs of our customers, we offer a
+              range of health-care plans.
+            </div>
+          </div>
+        </div>
+
+        <div className="flex  mt-5 pt-3  flex-wrap sm:justify-center md:justify-between lg:justify-between">
+          <div className="ml-3">
+            <div className="mb-10 pb-5 flex">
+              <div className="max-w-sm">
+                <a href="#">
+                  <img class="rounded-t-lg" src="/Rectangle7.png" alt="" />
+                </a>
+                <div className="">
+                  <p className="mb-3 font-normal text-gray-400 dark:text-gray-400 mt-4 pt-4">
+                    Our progressive delivery model uses technology to
+                    provide healthcare services that are convenient for you,
+                    whether you need medical assistance at home, in the office,
+                    or while travelling. 
+                  </p>
+                  <button className={styles.readmore}>Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className=" flex  flex-wrap sm:justify-center md:justify-between lg:justify-between">
+            <div className="mb-10 pb-5">
+              <div className="w-[24rem] md:w-[37.5rem] lg:w-[37.5rem] ">
+                <a href="#">
+                  <img class="rounded-t-lg" src="/Rectangle 8.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div className={`container py-10  ${styles.containerdiv} `}>
         <div className={`${styles.containerdiv}`}>
