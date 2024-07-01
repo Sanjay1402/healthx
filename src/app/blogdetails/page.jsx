@@ -17,7 +17,7 @@ const Page = ({}) => {
             <p className="text-xl font-light">Jan 11.24</p>
           </div>
           <div className="mr-5 mb-4">
-            <h2 className="text-3xl">
+            <h2 className="text-3xl ">
               The Rising Cost of Healthcare: Is It Too Late to Bring Costs Down?
             </h2>
           </div>

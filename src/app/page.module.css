@@ -298,3 +298,32 @@
   order: 1;
   flex-grow: 0;
 }
+.model {
+  /* model.module.css */
+  position: absolute; /* or relative, depending on your layout needs */
+  bottom: 10px; /* Adjust as needed */
+  left: 650px; /* Adjust as needed */
+  width: 290px; /* Adjust as needed */
+  height: 430px; /* Adjust as needed */
+  /* Any other styles you need */
+}
+/* model.module.css */
+
+.flexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Adjust as needed */
+  align-items: center; /* Adjust as needed */
+}
+
+.example {
+  flex: 1 1 100%; /* Adjust as needed */
+  /* Other styles */
+}
+
+.bottomLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Adjust as needed */
+  align-items: flex-start; /* Adjust as needed */
+}
