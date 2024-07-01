@@ -298,3 +298,17 @@
   order: 1;
   flex-grow: 0;
 }
+.readmore {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  position: absolute;
+  width: 130px;
+  height: 40px;
+
+  background: #1f8b7b;
+  border-radius: 5px;
+  color: white;
+}
