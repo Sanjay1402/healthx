@@ -21,7 +21,7 @@ const Page = () => {
       <div className="">
         <CurrentPage pages_text={pages_text} />
       </div>
-      <div className="flex mt-20 mb-10 justify-between flex-wrap">
+      <div className="flex mt-20 mb-10 sm:justify-center md:justify-center flex-wrap lg:justify-between">
         <div className="">
           <div className="text-3xl mb-4 font-bold">
             <span className="orange">News &</span>{" "}
@@ -103,27 +103,27 @@ const Page = () => {
         </div>
       </div>
       <div className="">
-        <div className="flex mt-20 mb-5 justify-between flex-wrap">
+        <div className="flex mt-20 mb-5  flex-wrap sm:justify-center md:justify-center  lg:justify-between">
           <div className="">
-            <div className="text-3xl mb-4 font-bold">
+            <div className="text-3xl mb-4 font-bold text-wrap">
               <span className="orange">Television</span>{" "}
             </div>
-            <div className="text-xl font-light mb-4">
+            <div className="text-xl font-light mb-4 text-wrap">
               Impact on Society and Culture{" "}
             </div>
           </div>
           <div className="flex">
             <div className="mr-4 opacity_text_orange">02</div>
             <div>
-              <div className="font-medium text-lg text-nowrap">Television</div>
-              <div className="font-light text-lg text-nowrap">
+              <div className="font-medium text-lg text-wrap">Television</div>
+              <div className="font-light text-lg text-wrap">
                 Technology Advances
               </div>
             </div>
           </div>
         </div>
         <div className="">
-          <div className="mb-5 flex justify-between flex-wrap">
+          <div className="mb-5 flex sm:justify-center md: justify-center sm:gap-4 md:gap-4 lg:gap-0 lg:justify-between flex-wrap">
             <div>
               <p className="text-xs">Jan 11:24</p>
               <h1 className="text-xl font-medium">Dawn News</h1>
@@ -153,7 +153,7 @@ const Page = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className="flex sm:justify-start md:justify-start lg:justify-center">
             <Slider />
           </div>
         </div>
@@ -162,18 +162,18 @@ const Page = () => {
           <Image src="/Group 40.png" alt="" width={10000} height={100} />
         </div>
       </div>
-      <div className="flex justify-end">
+      <div className="flex sm:justify-center md:justify-center lg:justify-end ">
         <div className="mr-4 opacity_text_orange ">02</div>
         <div className="pt-2">
           <div className="font-medium text-base text-nowrap">
             Digital Videos
           </div>
-          <div className="font-light text-xs text-nowrap">
+          <div className="font-light text-xs sm:text-wrap md:text-wrap">
             Innovations in Digital Experience{" "}
           </div>
         </div>
       </div>
-      <div className="flex mb-1 flex-wrap">
+      <div className="flex gap-3 mb-1 sm:justify-center md:justify-center md:flex-wrap flex-wrap lg:flex-nowrap flex-col md:flex-row lg:flex-row">
         <div className="flex">
           <div className="h-full flex flex-col items-center justify-center">
             <div>
@@ -190,27 +190,27 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <div className={styles.box}>
+        <div className={`flex flex-col md:justify-center${styles.box}`}>
           <a href="#">
             <img class="rounded-t-lg" src="/Rectangle17.png" alt="" />
           </a>
-          <p className="orange font-normal ml-2 pl-3 text-wrap">
+          <p className="orange sm:font-light md:font-light lg:font-normal ml-2 pl-3 text-wrap">
             Tired of Unnecessary High Costs?
           </p>
         </div>
-        <div className={styles.box}>
+        <div className={`flex flex-col md:justify-center${styles.box}`}>
           <a href="#">
             <img class="rounded-t-lg" src="/Rectangle17.png" alt="" />
           </a>
-          <p className="orange font-normal ml-2 pl-3 text-wrap">
+          <p className="orange sm:font-light md:font-light lg:font-normal ml-2 pl-3 text-wrap">
             Tired of Unnecessary High Costs?
           </p>
         </div>
-        <div className={styles.box}>
+        <div className={`flex flex-col md:justify-center${styles.box}`}>
           <a href="#">
             <img class="rounded-t-lg" src="/Rectangle17.png" alt="" />
           </a>
-          <p className="orange font-normal ml-2 pl-3 text-wrap">
+          <p className="orange sm:font-light md:font-light lg:font-normal ml-2 pl-3 text-wrap">
             Tired of Unnecessary High Costs?
           </p>
         </div>

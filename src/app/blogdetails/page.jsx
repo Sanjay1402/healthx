@@ -31,7 +31,7 @@ const Page = ({}) => {
             />
           </div>
         </div>
-        <div className="flex flex-col gap-y-7 md:gap-y-24 md:mr-2 md:pr-2  md:flex-wrap lg:flex-wrap">
+        <div className="flex flex-col gap-y-7 md:gap-y-24 md:mr-2 md:pr-2  md:flex-wrap lg:flex-wrap justify-center">
           <div className="max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 md:p-5 md:m-2 lg:p-5 lg:m-2 flex flex-wrap">
             <p className="green pr-5 m-2 text-xl font-medium">On this Page</p>
             <div className="flex flex-wrap items-center justify-center text-sm md:text-md lg:text-lg">

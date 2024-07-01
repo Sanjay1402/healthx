@@ -417,7 +417,7 @@ export default function Home() {
         <AppIntegration />
         {/* Frequently Asked Component */}
 
-        <div className="flex justify-between">
+        <div className="flex flex-col sm:flex-col md:flex-row lg-flex-row sm:justify-center md:justify-center lg:justify-between">
           <div className="text-4xl mb-4 font-bold ">
             <span className="green">FREQUENTLY</span>{" "}
             <span className="orange">ASKED QUESTION</span>
@@ -513,7 +513,7 @@ export default function Home() {
         <AppBanner />
       </div>
       <div>
-        <div className="container flex justify-between flex-wrap">
+        <div className="container flex justify-between flex-wrap ">
           <div className="text-4xl font-bold">
             <span className="flex">
               <h1 className="orange">Blogs</h1>
@@ -526,7 +526,7 @@ export default function Home() {
               <span className="orange text-5xl font-bold opacity-20">08</span>
             </div>
             <div className="text-black">
-              <div className="flex justify-start">
+              <div className="flex justify-start sm:justify-center">
                 <h3 className="font-bold">Blogs</h3>
               </div>
               <p>We are committed to your Health</p>
@@ -536,7 +536,7 @@ export default function Home() {
         <div className="container flex gap-5 my-5 flex-wrap lg:flex-nowrap">
           <div className="w-40 h-1/2 my-5 py-2 text-xl">
             {" "}
-            <ul className="m-2 flex flex-col justify-evenly">
+            <ul className="m-2 flex flex-col justify-evenly md:justify-center sm:justify-center">
               <p className="mb-3"> All</p>
               <a href="/news">
                 {" "}
