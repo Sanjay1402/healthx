@@ -9,12 +9,12 @@ import { Wireframe, useGLTF } from "@react-three/drei";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
 import coloredtexture from "../shaders/peakpx.jpg";
-
+import styles from "./model.module.css";
 gsap.registerPlugin(ScrollTrigger);
 
 function Model(props) {
   const shaderMaterialRef = useRef(); // Reference to the shader material
-  const { nodes } = useGLTF("./assets/shiba/lopoly_dna.gltf");
+  const { nodes } = useGLTF("/lopoly_dna.gltf");
 
   const groupRef = useRef();
 
@@ -62,11 +62,11 @@ function Model(props) {
   }, [nodes, shaderMaterial]);
 
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} position={[0, 0, 0]} scale={47}>
       <group ref={groupRef} />
       <group ref={groupRef} {...props} dispose={null}>
-        <group scale={0.01}>
-          <group position={[0, 0, 0]} rotation={[0, 0, 0]} scale={15}>
+        <group scale={[0.0052, 0.0052, 0.0052]}>
+          <group position={[0, 0, 0]} rotation={[0, 0, 0]}>
             <mesh
               geometry={nodes.DNA3.geometry}
               material={shaderMaterial}
@@ -77,7 +77,6 @@ function Model(props) {
     </group>
   );
 }
-
 function NewApp() {
   const imgref = useRef(null);
 
@@ -102,16 +101,24 @@ function NewApp() {
   }, []);
 
   return (
-    <div>
+    <div style={{ width: "173%", height: "173%" }}>
       <Canvas
         ref={imgref}
-        style={{ width: "100vw", height: "110vh", minHeight: "10vh" }}
+        style={{
+          width: "112%",
+          height: "93%",
+        }}
+        camera={{
+          position: [0, 0, 10], // Adjust camera position
+          near: 0.1, // Adjust near clipping plane
+          far: 1000, // Adjust far clipping plane
+        }}
       >
         <Suspense fallback={null}>
           <directionalLight position={[1, 1, 1]} intensity={1} />
           <spotLight position={[0.5, 0.5, 1]} angle={10} penumbra={10} />
           <mesh>
-            <Model />
+            <Model position={[0, -2, 0]} /> {/* Adjust model position */}
           </mesh>
         </Suspense>
       </Canvas>
