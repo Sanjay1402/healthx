@@ -47,38 +47,35 @@ export default function Home() {
             </span>
             active users across the globe
           </div>
-          
+
           <div className="grid md:grid-cols-4 sm:grid-cols-2 place-items-center ">
-            
-          <div className="flex ">
-            <div className="green text-6xl font-medium ">50K</div>
+            <div className="flex ">
+              <div className="green text-6xl font-medium ">50K</div>
 
-            <div className="mt-1 ms-1 ">
-              <div>Ratings</div>
-              <div>User</div>
+              <div className="mt-1 ms-1 ">
+                <div>Ratings</div>
+                <div>User</div>
+              </div>
+            </div>
+
+            <div className="flex">
+              <div className="green text-6xl font-medium">95K</div>
+
+              <div className="mt-1 ms-1">
+                <div>Experienced</div>
+                <div>Clinics</div>
+              </div>
+            </div>
+
+            <div className="flex">
+              <div className="green text-6xl font-medium">80%</div>
+
+              <div className="mt-1 ms-1">
+                <div>Experienced</div>
+                <div>Clinics</div>
+              </div>
             </div>
           </div>
-         
-          <div className="flex">
-            <div className="green text-6xl font-medium">95K</div>
-
-            <div className="mt-1 ms-1">
-              <div>Experienced</div>
-              <div>Clinics</div>
-            </div>
-          </div>
-
-          <div className="flex">
-            <div className="green text-6xl font-medium">80%</div>
-
-            <div className="mt-1 ms-1">
-              <div>Experienced</div>
-              <div>Clinics</div>
-            </div>
-          </div>
-
-
-        </div>
         </div>
         <div className="flex sm:justify-between md:justify-between lg:justify-around container flex-wrap">
           <div className="flex flex-wrap">
@@ -554,7 +551,7 @@ export default function Home() {
               </a>
             </ul>
           </div>
-          <div>
+          <div className="sm:mx-auto md:mx-auto">
             <p className="text-xs">Jan 11:24</p>
             <h1 className="text-sm md:text-md lg:text-md font-medium text-orange">
               Mental health Services should count as Healthcare
@@ -573,7 +570,7 @@ export default function Home() {
               </span>
             </div>
           </div>
-          <div>
+          <div className="sm:mx-auto md:mx-auto">
             <p className="text-xs">Jan 11:24</p>
             <h1 className="text-sm md:text-md lg:text-md font-medium">
               Corporate wellness programs help save on healthcare....{" "}
@@ -592,7 +589,7 @@ export default function Home() {
               </span>
             </div>
           </div>
-          <div>
+          <div className="sm:mx-auto md:mx-auto">
             <p className="text-xs">Jan 11:24</p>
             <h1 className="text-sm md:text-md lg:text-md font-medium">
               Corporate wellness programs help save on healthcare....{" "}
