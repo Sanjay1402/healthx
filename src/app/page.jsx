@@ -20,9 +20,6 @@ export default function Home() {
       <div className={`container`}>
         <div className={styles.example}>
           <div className={`flex flex-col ${styles.bottomLeft} flex-wrap`}>
-            <div className={`flex flex-wrap ${styles.model}`}>
-              <NewApp />
-            </div>
             <div className="flex items-end p-2">
               <h1 className={styles.healthx}>Healthx Pakistan</h1>
             </div>
