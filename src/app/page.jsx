@@ -43,7 +43,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex justify-around mb-32 ">
+        <div className="flex justify-around my-16 gap-20">
           <div className="">
             Trusted by more than{" "}
             <span className="orange">
