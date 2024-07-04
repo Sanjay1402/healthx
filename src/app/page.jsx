@@ -17,7 +17,7 @@ import NewApp from "@/Model/Model";
 export default function Home() {
   return (
     <main>
-      <div className={`container overflow-visible ${styles.flexContainer}`}>
+      <div className={`container`}>
         <div className={styles.example}>
           <div className={`flex flex-col ${styles.bottomLeft} flex-wrap`}>
             <div className="flex items-end p-2">
@@ -40,7 +40,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex justify-around mb-32 ">
+        <div className="flex justify-around my-16 gap-20">
           <div className="">
             Trusted by more than{" "}
             <span className="orange">
