@@ -17,7 +17,7 @@ import NewApp from "@/Model/Model";
 export default function Home() {
   return (
     <main>
-      <div className={`container`}>
+      <div className={`container overflow-visible ${styles.flexContainer}`}>
         <div className={styles.example}>
           <div className={`flex flex-col ${styles.bottomLeft} flex-wrap`}>
             <div className="flex items-end p-2">
