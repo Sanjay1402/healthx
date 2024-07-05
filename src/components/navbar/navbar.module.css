@@ -87,3 +87,43 @@
   order: 1;
   flex-grow: 0;
 }
+/* YourStyles.module.css */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.link {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  background-color: #e78361;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+.sublink {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.sublink:hover {
+  background-color: #e78361;
+}

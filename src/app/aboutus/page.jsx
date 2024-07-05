@@ -1,49 +1,52 @@
-import React from 'react'
-import CurrentPage from '@/components/currentpage/CurrentPage';
-import Image from 'next/image';
-import styles from '@/app/aboutus/page.module.css';
+import React from "react";
+import CurrentPage from "@/components/currentpage/CurrentPage";
+import Image from "next/image";
+import styles from "@/app/aboutus/page.module.css";
 import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-  } from "@/components/ui/card";
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
-import Values from '@/components/values/Values';
-import { Button } from "@/components/ui/button"
-import AppBanner from '@/components/appbanner/AppBanner';
-import Slider from '@/components/radioslider/Slider';
-
+import Values from "@/components/values/Values";
+import { Button } from "@/components/ui/button";
+import AppBanner from "@/components/appbanner/AppBanner";
+import Slider from "@/components/radioslider/Slider";
+import Navbar from "@/components/navbar/Navbar";
 
 let pages_text = { start: "Homepage", end: "About" };
 
 const page = () => {
   return (
     <>
-    <div className='container'>
+      <div className="container">
+        <Navbar />
         <CurrentPage pages_text={pages_text} />
 
         <div className="">
-        <div className="flex mt-20 mb-20 justify-between">
-          <div className="">
-            <div className="text-5xl mb-4 font-medium">
-              <span className="orange">Our Story</span>
+          <div className="flex mt-20 mb-20 justify-between">
+            <div className="">
+              <div className="text-5xl mb-4 font-medium">
+                <span className="orange">Our Story</span>
+              </div>
+              <div className="text-sm font-light mb-4">
+                Transforming Healthcare Globally
+              </div>
             </div>
-            <div className="text-sm font-light mb-4">Transforming Healthcare Globally</div>
-          </div>
-          <div className="flex">
-            <div className="mr-4 opacity_text_orange">01</div>
-            <div>
-              <div className="font-medium text-lg">About us</div>
-              <div className="font-light text-lg">
-                We are committed to your Health
+            <div className="flex">
+              <div className="mr-4 opacity_text_orange">01</div>
+              <div>
+                <div className="font-medium text-lg">About us</div>
+                <div className="font-light text-lg">
+                  We are committed to your Health
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
       
       <div className='ms-auto flex flex-col justify-end w-7/12'>
@@ -108,7 +111,7 @@ const page = () => {
                 Clinics
                 </div>
             </div>
-        </div>
+          </div>
 
 
         <div className='flex self-center'>
@@ -142,13 +145,17 @@ const page = () => {
         Embracing Humanity
         </div>
 
-        <div className='text-white mt-7'>
-        It serves as both our guiding principle and our promise to deliver exceptional care that not only heals bodies but also uplifts spirits and enriches lives. It is through this dual commitment to innovation and compassion that we strive to make a meaningful difference in the lives of individuals and communities worldwide
-        </div>
-        <Button className="bg_orange mt-5">Contact Us</Button>   
+          <div className="text-white mt-7">
+            It serves as both our guiding principle and our promise to deliver
+            exceptional care that not only heals bodies but also uplifts spirits
+            and enriches lives. It is through this dual commitment to innovation
+            and compassion that we strive to make a meaningful difference in the
+            lives of individuals and communities worldwide
+          </div>
+          <Button className="bg_orange mt-5">Contact Us</Button>
 
-        <div className='flex gap-5  mt-10'>
-        <Image
+          <div className="flex gap-5  mt-10">
+            <Image
               src="/Rectangle 45.png"
               alt=""
               height="76"
@@ -176,9 +183,8 @@ const page = () => {
               width="237"
               className="mb-10"
             />
+          </div>
         </div>
-        
-    </div>
 
     <div className='grid grid-cols-2 gap-5'>
     <Card className={styles.dark_card}>   
@@ -286,39 +292,23 @@ const page = () => {
               alt=""
               height="406"
               width="367"
-              className='pb-2'
-              
+              className="pb-2"
             />
+          </div>
+          <div>
+            <Image src="/doctors/2.png" alt="" height="406" width="367" />
+          </div>
+          <div>
+            <Image src="/doctors/3.png" alt="" height="300" width="367" />
+          </div>
         </div>
-        <div>
-        <Image
-              src="/doctors/2.png"
-              alt=""
-              height="406"
-              width="367"
-              
-            />
-        </div>
-        <div>
-        <Image
-              src="/doctors/3.png"
-              alt=""
-              height="300"
-              width="367"
-              
-            />
-        </div>
+      </div>
 
-        </div>
-        </div>
-    
-
-       <div className='container'><AppBanner /></div>
-        
-   
-       
+      <div className="container">
+        <AppBanner />
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default page
+export default page;

@@ -5,7 +5,7 @@ import styles from "./news.module.css";
 import Noimgcard from "@/components/card(Taha)/Noimgcard";
 import Image from "next/image";
 import Slider from "@/components/radioslider/Slider";
-
+import Navbar from "@/components/navbar/Navbar";
 const Page = () => {
   let pages_text = { start: "Homepage", end: "News And Media" };
 
@@ -18,6 +18,7 @@ const Page = () => {
 
   return (
     <main className="container">
+      <Navbar />
       <div className="">
         <CurrentPage pages_text={pages_text} />
       </div>
@@ -123,7 +124,7 @@ const Page = () => {
           </div>
         </div>
         <div className="">
-          <div className="mb-5 flex justify-between flex-wrap">
+          <div className="mb-5 flex justify-between flex-wrap ">
             <div>
               <p className="text-xs">Jan 11:24</p>
               <h1 className="text-xl font-medium">Dawn News</h1>

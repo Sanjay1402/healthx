@@ -1,33 +1,47 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import styles from "./navbar.module.css";
 import Image from "next/image";
-
+import Dropdown from "./Dropdown";
 const links = [
   {
     id: 1,
     title: "Solutions",
-    url: "/",
-    
+    url: "#",
+    sublinks: [
+      { id: 1.1, title: "Solution Corporates", url: "/solutions_corporates" },
+      { id: 1.2, title: "Solutions Government", url: "/solutions_govt" },
+      { id: 1.3, title: "Solutions Individual", url: "/solutions_individual" },
+      { id: 1.4, title: "Solutions Insurers", url: "/solutions_insurers" },
+    ],
   },
-
   {
     id: 2,
     title: "Resources",
-    url: "/blog",
+    url: "#",
+    sublinks: [
+      { id: 2.1, title: "News and Media", url: "/news" },
+      { id: 2.2, title: "Blogs", url: "/blogs" },
+      { id: 2.3, title: "Blog details", url: "/blogdetails" },
+      { id: 2.3, title: "FAQ", url: "/faq" },
+    ],
   },
   {
     id: 3,
     title: "About us",
-    url: "/about",
+    url: "#",
+    sublinks: [
+      { id: 3.1, title: "Contact Us", url: "/contactus" },
+      { id: 3.2, title: "About Us", url: "/aboutus" },
+    ],
   },
 ];
 
 const Navbar = () => {
   return (
-    <div className="container flex justify-between my-5 flex-wrap">
+    <div className="flex justify-between my-5 flex-wrap gap-16">
       <Link href="/" className={styles.logo}>
         <div className="flex items-center">
           <div className="flex items-center">
@@ -43,9 +57,7 @@ const Navbar = () => {
       </Link>
       <div className="flex items-center gap-7 flex-wrap">
         {links.map((link) => (
-          <Link key={link.id} href={link.url} className={styles.link}>
-            {link.title}
-          </Link>
+          <Dropdown key={link.id} link={link} />
         ))}
         <div className="">
           <select className={styles.selstyles} name="language" id="language">

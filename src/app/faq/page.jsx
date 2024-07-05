@@ -6,7 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-
+import Navbar from '@/components/navbar/Navbar'
 const page = () => {
     
   return (
@@ -23,10 +23,9 @@ const page = () => {
             <div className='font-medium text-lg text-nowrap'>FAQ's</div>
             <div className='font-light text-lg'>We are committed to your Health</div>
             </div>
-            
+          </div>
         </div>
-        </div>
-    </div>
+      </div>
 
     <div className='grid grid-cols-1 md:grid-cols-2 gap-5 my-10'>
       <Accordion type="single" collapsible>
@@ -90,9 +89,9 @@ const page = () => {
 
 
 
-    <AppBanner />
+      <AppBanner />
     </main>
-  )
+  );
 }
 
 export default page

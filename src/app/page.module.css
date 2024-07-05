@@ -320,3 +320,23 @@
   justify-content: flex-end; /* Adjust as needed */
   align-items: flex-start; /* Adjust as needed */
 }
+.readmore {
+  /* Frame 10 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 120px;
+  height: 52px;
+
+  background: #1f8b7b;
+  border-radius: 5px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
