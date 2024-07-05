@@ -53,8 +53,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex justify-between my-16 gap-20">
-          <div className="">
+        <div className="flex justify-around mt-20 mb-20 flex-col lg:md:flex-row">
+          <div className="self-center">
             Trusted by more than{" "}
             <span className="orange">
               500,000+ <br></br>
@@ -62,32 +62,29 @@ export default function Home() {
             active users across the globe
           </div>
 
-          <div className="grid md:grid-cols-3 sm:grid-cols-1 sm:place-items-center place-items-end gap-2">
-            <div className="flex ">
-              <div className="green text-6xl font-medium ">50K</div>
+          <div className="flex self-center">
+            <div className="green text-6xl font-medium">50K</div>
 
-              <div className="mt-1 ms-1 ">
-                <div>Ratings</div>
-                <div>User</div>
-              </div>
+            <div className="mt-1 ms-1">
+              <div>Ratings</div>
+              <div>User</div>
             </div>
+          </div>
+          <div className="flex self-center">
+            <div className="green text-6xl font-medium">95K</div>
 
-            <div className="flex">
-              <div className="green text-6xl font-medium">95K</div>
-
-              <div className="mt-1 ms-1">
-                <div>Experienced</div>
-                <div>Clinics</div>
-              </div>
+            <div className="mt-1 ms-1">
+              <div>Experienced</div>
+              <div>Clinics</div>
             </div>
+          </div>
 
-            <div className="flex">
-              <div className="green text-6xl font-medium">80%</div>
+          <div className="flex self-center">
+            <div className="green text-6xl font-medium">80%</div>
 
-              <div className="mt-1 ms-1">
-                <div>Experienced</div>
-                <div>Clinics</div>
-              </div>
+            <div className="mt-1 ms-1">
+              <div>Experienced</div>
+              <div>Clinics</div>
             </div>
           </div>
         </div>
