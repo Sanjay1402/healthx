@@ -313,6 +313,7 @@
 
 .example {
   flex: 1 1 100%; /* Adjust as needed */
+  border-radius: 1em;
   /* Other styles */
 }
 

@@ -23,7 +23,9 @@ export default function Home() {
           <Navbar />
           <div className="">
             <div className={"absolute top-[60%] container right-0 left-0"}>
-              <div className={` sm:hidden md:hidden lg:block ${styles.model} `}>
+              <div
+                className={`hidden sm:hidden md:hidden lg:block ${styles.model} `}
+              >
                 <NewApp />
               </div>
               <div className="ml-5 pl-5">
@@ -35,12 +37,12 @@ export default function Home() {
                     Healthcare with a <span className="green">Heart</span>
                   </h1>
                 </div>
-                <div className="my-1 p-2">
+                <div className="my-1 py-2">
                   <h2 className="font-extralight text-4xl">
                     Where Every Life Matters
                   </h2>
                 </div>
-                <div className="my-1 p-2">
+                <div className="my-1 py-2">
                   <button className={`text-white ${styles.contactbutton}`}>
                     Contact Us
                   </button>
@@ -49,7 +51,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex justify-around my-16 gap-20">
+        <div className="flex justify-between my-16 gap-20">
           <div className="">
             Trusted by more than{" "}
             <span className="orange">
@@ -58,7 +60,7 @@ export default function Home() {
             active users across the globe
           </div>
 
-          <div className="grid md:grid-cols-4 sm:grid-cols-2 place-items-center ">
+          <div className="grid md:grid-cols-4 sm:grid-cols-2 place-items-end ">
             <div className="flex ">
               <div className="green text-6xl font-medium ">50K</div>
 
