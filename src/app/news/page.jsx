@@ -124,7 +124,7 @@ const Page = () => {
           </div>
         </div>
         <div className="">
-          <div className="mb-5 flex justify-between flex-wrap">
+          <div className="mb-5 flex justify-between flex-wrap ">
             <div>
               <p className="text-xs">Jan 11:24</p>
               <h1 className="text-xl font-medium">Dawn News</h1>

@@ -41,7 +41,7 @@ const links = [
 
 const Navbar = () => {
   return (
-    <div className="container flex justify-between my-5 flex-wrap">
+    <div className="flex justify-between my-5 flex-wrap gap-16">
       <Link href="/" className={styles.logo}>
         <div className="flex items-center">
           <div className="flex items-center">
