@@ -60,7 +60,7 @@ export default function Home() {
             active users across the globe
           </div>
 
-          <div className="grid md:grid-cols-4 sm:grid-cols-2 place-items-end ">
+          <div className="grid md:grid-cols-3 sm:grid-cols-1 sm:place-items-center place-items-end gap-2">
             <div className="flex ">
               <div className="green text-6xl font-medium ">50K</div>
 
