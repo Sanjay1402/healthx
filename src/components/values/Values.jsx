@@ -9,7 +9,7 @@ const Values = () => {
         <div className={styles.values}>Values <span className={styles.uphold}>We Uphold</span></div>
         <div className={styles.commitment}>Commitment to Health and Well-being</div>
       </div>
-      <div className= "grid grid-cols-4 gap-4 mt-20 mb-20 content-center">
+      <div className= "grid lg:md:grid-cols-4 gap-4 mt-20 mb-20 content-center sm:grid-cols-2">
         <div className=''> 
           <Image
             src="/values/3.png"

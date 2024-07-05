@@ -12,7 +12,7 @@ const page = () => {
   return (
     <main className='container'>
     <div className="">
-        <div className='flex mt-40 mb-20 justify-between'>
+        <div className='flex mt-40 mb-20 justify-between lg:md:flex-row flex-col-reverse'>
         <div className=''>
             <div className='text-5xl mb-4 font-bold'><span className='green'>FREQUENTLY</span> <span className='orange'>ASKED QUESTION</span></div>
             <div className='text-4xl font-light mb-4'>Answers to Your Common Queries</div>
@@ -21,14 +21,14 @@ const page = () => {
             <div className='mr-4 opacity_text_orange'>01</div>
             <div>
             <div className='font-medium text-lg text-nowrap'>FAQ's</div>
-            <div className='font-light text-lg text-nowrap'>We are committed to your Health</div>
+            <div className='font-light text-lg'>We are committed to your Health</div>
             </div>
             
         </div>
         </div>
     </div>
 
-    <div className='grid grid-cols-2 gap-5 my-10'>
+    <div className='grid grid-cols-1 md:grid-cols-2 gap-5 my-10'>
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
           <AccordionTrigger>How do I install the Healthx app?</AccordionTrigger>

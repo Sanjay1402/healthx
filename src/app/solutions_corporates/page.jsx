@@ -32,7 +32,7 @@ const page = () => {
 
         <CurrentPage pages_text={pages_text}/>
         <SolComp text={text}/>
-        <div className='grid grid-cols-2 gap-8 mb-10'>
+        <div className='grid md:lg:grid-cols-2 sm:grid-cols-1 gap-8 mb-10 '>
           <Card>
             <CardHeader>
             <Image

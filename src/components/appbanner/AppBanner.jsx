@@ -4,7 +4,7 @@ import styles from './appbanner.module.css'
 
 const appBanner = () => {
   return (
-    <div className={styles.container}>
+    <div className={`overflow-hidden ${styles.container}`}>
 
         <Image
             src="/Rectangle 5.png"
@@ -62,7 +62,7 @@ const appBanner = () => {
           <div className={styles.foralltext}>For All</div>
           <p className={styles.leftp}>As a multinational healthcare management company, we take pride in our team <br/>of experienced healthcare professionals.</p>
       
-          <div className={styles.approw}>
+          <div className={`flex gap-5 mt-5 lg:md:flex ${styles.approw}`}>
             
             <Image
               src="/appstore.png"
@@ -71,7 +71,7 @@ const appBanner = () => {
               width='182' 
             /> 
             
-            <span className={styles.space}></span>
+           
           <Image
               src="/playstore.png"
               alt=""
@@ -87,6 +87,7 @@ const appBanner = () => {
          alt=""
          height='460'
          width='425'
+         className='lg:md:block sm:hidden'
        /> 
       </div>
       </div>      
