@@ -14,11 +14,13 @@ import {
 import Slider from "@/components/radioslider/Slider";
 import Card from "@/components/card(Taha)/Card";
 import NewApp from "@/Model/Model";
+import Navbar from "@/components/navbar/Navbar";
 export default function Home() {
   return (
     <main>
       <div className={`container`}>
         <div className={styles.example}>
+          <Navbar />
           <div className={`flex flex-col ${styles.bottomLeft} flex-wrap`}>
             <div className={`flex flex-wrap ${styles.model}`}>
               <NewApp />
