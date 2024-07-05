@@ -4,10 +4,12 @@ import styles from "./details.module.css";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import Navbar from "@/components/navbar/Navbar";
 const Page = ({}) => {
   let pages_text = { start: "Homepage", end: "Blogs" };
   return (
     <main className="container">
+      <Navbar/>
       <div className="mb-5 pb-5 m-1">
         <CurrentPage pages_text={pages_text} />
       </div>

@@ -5,7 +5,7 @@ import styles from "./news.module.css";
 import Noimgcard from "@/components/card(Taha)/Noimgcard";
 import Image from "next/image";
 import Slider from "@/components/radioslider/Slider";
-
+import Navbar from "@/components/navbar/Navbar";
 const Page = () => {
   let pages_text = { start: "Homepage", end: "News And Media" };
 
@@ -18,6 +18,7 @@ const Page = () => {
 
   return (
     <main className="container">
+      <Navbar />
       <div className="">
         <CurrentPage pages_text={pages_text} />
       </div>
