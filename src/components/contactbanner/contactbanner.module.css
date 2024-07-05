@@ -15,10 +15,10 @@
 
 .dna{
   position: absolute;
-  top: -15rem;
+  top: 0rem;
   left: 29rem;
   z-index: -1;
-  transform: rotate(-20.57deg);
+  transform: rotate(-10.57deg);
 }
 
 .inner_container{
