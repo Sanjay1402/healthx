@@ -18,7 +18,7 @@ import Navbar from "@/components/navbar/Navbar";
 export default function Home() {
   return (
     <main className="overflow-hidden">
-      <div className={`container mt-10 overflow-hidden`}>
+      <div className={`container mt-7 overflow-hidden`}>
         <div className={styles.example}>
           <Navbar />
           <div className="">
@@ -43,7 +43,9 @@ export default function Home() {
                   </h2>
                 </div>
                 <div className="my-1 py-2">
-                  <button className={`text-white ${styles.contactbutton}`}>
+                  <button
+                    className={`text-white ${styles.contactbutton} w-[31%] sm:w-[28%] md:w-[15%]`}
+                  >
                     Contact Us
                   </button>
                 </div>

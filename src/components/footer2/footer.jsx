@@ -94,8 +94,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex gap-20 items-center flex-wrap">
-          <div>
-            Quick Links
+          <div className="flex justify-end md:justify-normal md:flex-col lg:justify-normal">
+            <div className="">Quick Links</div>
             <div className=" text-sm md:text-xs lg:text-xs mt-2 pt-2 text-slate-400 ">
               <ul>
                 <li className="mb-1">About Us</li>
@@ -106,8 +106,8 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div>
-            Resources
+          <div className="flex justify-end md:justify-normal md:flex-col lg:justify-normal">
+            <div>Resources</div>
             <div className="text-sm md:text-xs lg:text-xs  mt-3 text-slate-400 ">
               <ul className="pb-2">
                 <li className="mb-2">Individuals & Families</li>
@@ -117,8 +117,8 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="pt-3">
-            Our Information
+          <div className="flex justify-end md:justify-normal md:flex-col lg:justify-normal">
+            <div className="pt-3">Our Information</div>
             <ul>
               <li>
                 <div className="flex text-sm md:text-xs lg:text-xs  mt-3 text-slate-400 flex-wrap">
