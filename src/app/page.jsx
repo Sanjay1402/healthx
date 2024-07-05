@@ -17,31 +17,35 @@ import NewApp from "@/Model/Model";
 import Navbar from "@/components/navbar/Navbar";
 export default function Home() {
   return (
-    <main>
-      <div className={`container`}>
+    <main className="overflow-hidden">
+      <div className={`container mt-10 overflow-hidden`}>
         <div className={styles.example}>
           <Navbar />
-          <div className={`flex flex-col ${styles.bottomLeft} flex-wrap`}>
-            <div className={`flex flex-wrap ${styles.model}`}>
-              <NewApp />
-            </div>
-            <div className="flex items-end p-2">
-              <h1 className={styles.healthx}>Healthx Pakistan</h1>
-            </div>
-            <div className="mb-4 p-2">
-              <h1 className="orange text-5xl font-bold">
-                Healthcare with a <span className="green">Heart</span>
-              </h1>
-            </div>
-            <div className="my-1 p-2">
-              <h2 className="font-extralight text-4xl">
-                Where Every Life Matters
-              </h2>
-            </div>
-            <div className="my-1 p-2">
-              <button className={`text-white ${styles.contactbutton}`}>
-                Contact Us
-              </button>
+          <div className="">
+            <div className={"absolute top-[60%] container right-0 left-0"}>
+              <div className={` sm:hidden md:hidden lg:block ${styles.model} `}>
+                <NewApp />
+              </div>
+              <div className="ml-5 pl-5">
+                <div className="flex justify-start ">
+                  <h1 className={styles.healthx}>Healthx Pakistan</h1>
+                </div>
+                <div className="">
+                  <h1 className="orange text-5xl font-bold">
+                    Healthcare with a <span className="green">Heart</span>
+                  </h1>
+                </div>
+                <div className="my-1 p-2">
+                  <h2 className="font-extralight text-4xl">
+                    Where Every Life Matters
+                  </h2>
+                </div>
+                <div className="my-1 p-2">
+                  <button className={`text-white ${styles.contactbutton}`}>
+                    Contact Us
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
