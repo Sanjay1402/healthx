@@ -10,6 +10,7 @@ const links = [
     id: 1,
     title: "Solutions",
     url: "/",
+    
   },
 
   {
@@ -26,7 +27,7 @@ const links = [
 
 const Navbar = () => {
   return (
-    <div className="container flex justify-between my-5">
+    <div className="container flex justify-between my-5 flex-wrap">
       <Link href="/" className={styles.logo}>
         <div className="flex items-center">
           <div className="flex items-center">
@@ -40,7 +41,7 @@ const Navbar = () => {
           </div>
         </div>
       </Link>
-      <div className="flex justify-center items-center gap-10">
+      <div className="flex items-center gap-7 flex-wrap">
         {links.map((link) => (
           <Link key={link.id} href={link.url} className={styles.link}>
             {link.title}
@@ -53,7 +54,7 @@ const Navbar = () => {
           </select>
         </div>
         <button
-          className=""
+          className={styles.downloadbutton}
           onClick={() => {
             console.log("downloaded");
           }}
