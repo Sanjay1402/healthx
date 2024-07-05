@@ -92,6 +92,62 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="flex justify-around container my-5 py-5 flex-wrap md:flex-nowrap lg:flex-nowrap">
+        <div className="flex flex-col gap-16">
+          <div className="flex flex-row items-center">
+            <span className="orange text-5xl font-bold opacity-20 mr-3">
+              02
+            </span>
+            <div className="text-black">
+              <div className="flex justify-start">
+                <h3 className="font-bold">About Us</h3>
+              </div>
+              <p>We are committed to your health</p>
+            </div>
+          </div>
+          <div className="">
+            <Image
+              src="/Rectangle 7.png"
+              width={400}
+              height={300}
+              alt=""
+            ></Image>
+          </div>
+          <div className="w-[60%] ">
+            <p>
+              Our progressive delivery model uses technology to
+              provide healthcare services that are convenient for you, whether
+              you need medical assistance at home, in the office, or while
+              travelling. 
+            </p>
+            <button className={`${styles.readmore} my-4`}>Read More</button>
+          </div>
+        </div>
+        <div className="w-[100%] flex flex-col flex-wrap gap-10">
+          <div className="text-3xl font-bold ">
+            <h1 className="green">
+              Healthcare
+              <span className="orange ml-2">Management for All</span>
+            </h1>
+            <h1 className="font-light text-2xl mt-1">
+              A Global Approach in Pakistan
+            </h1>
+          </div>
+          <div>
+            <p className="text-sm">
+              Powered by TruDoc, Healthx is a global healthcare management
+              company providing high-quality primary healthcare services to all.
+              Our primary function as a healthcare management company in
+              Pakistan is to keep patients healthy and reduce costs for patients
+              and payers. To meet the diverse needs of our customers, we offer a
+              range of health-care plans.
+            </p>
+          </div>
+          <div className="">
+            <Image src="/Rectangle 8.png" width={500} height={300} alt="" />
+          </div>
+        </div>
+      </div>
       <div className={`container py-10  ${styles.containerdiv} `}>
         <div className={`${styles.containerdiv}`}>
           <div className="flex justify-between flex-wrap">
