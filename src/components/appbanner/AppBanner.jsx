@@ -11,7 +11,7 @@ const appBanner = () => {
             alt=""
             height='770'
             width='660'
-            className={styles.dna}
+            className={`lg:md:block hidden ${styles.dna}`}
           /> 
 
        <div className={styles.sptext}>Strategic Partners</div>
@@ -42,14 +42,14 @@ const appBanner = () => {
           <Image
             src="/app_banner/Logo5-1 1.png"
             alt=""
-            height='60'
-            width='126'  
+            height='40'
+            width='106'  
           /> 
            <Image
             src="/app_banner/Logo8-1 1.png"
             alt=""
-            height='60'
-            width='126' 
+            height='40'
+            width='106' 
           /> 
         </div>
       
@@ -62,21 +62,23 @@ const appBanner = () => {
           <div className={styles.foralltext}>For All</div>
           <p className={styles.leftp}>As a multinational healthcare management company, we take pride in our team <br/>of experienced healthcare professionals.</p>
       
-          <div className={`flex gap-5 mt-5 lg:md:flex ${styles.approw}`}>
+          <div className={`flex gap-5 mt-5 ${styles.approw}`}>
             
             <Image
               src="/appstore.png"
               alt=""
-              height='63'
-              width='182' 
+              height='43'
+              width='162' 
+              className='mb-10 lg:md:mb-0'
             /> 
             
            
           <Image
               src="/playstore.png"
               alt=""
-              height='63'
-              width='182' 
+              height='43'
+              width='162' 
+              className='mb-10 lg:md:mb-0'
             /> 
          
           </div>
@@ -85,9 +87,9 @@ const appBanner = () => {
       <Image
          src="/shazain 1.png"
          alt=""
-         height='460'
-         width='425'
-         className='lg:md:block sm:hidden'
+         height='380'
+         width='265'
+         className='lg:md:block hidden'
        /> 
       </div>
       </div>      

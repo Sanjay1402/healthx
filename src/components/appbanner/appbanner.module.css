@@ -1,5 +1,5 @@
 .container{
-    height: 45rem;
+    height: 100%;
     /* width: ; */
     background-image: linear-gradient(to right, #E9501D1F , #1F8B7B1F, #EBC6621F);
     display: flex;
@@ -18,7 +18,7 @@
 .dna{
   position: absolute;
   top: 0;
-  left: 30rem;
+  left: 25rem;
   z-index: -1;
   transform: rotate(-10.57deg);
 }
@@ -48,7 +48,7 @@
 }
 
 .logo img{
-  margin-right: 4.5rem;
+  margin-right: 2rem;
 }
 
 .inner_container{
@@ -59,21 +59,21 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 28px;
   margin-left: 2rem;
-  margin-top: 2rem;
+  margin-top: 0rem;
   /* line-height: 52; */
 }
 .healthsoltext{
   font-weight: 600;
-  font-size: 65px;
+  font-size: 45px;
   color: #E9501D;
   margin-left: 2rem;
 }
 .foralltext{
   color: #1E1E1E;
   font-weight: 275;
-  font-size: 41px;
+  font-size: 31px;
   margin-left: 2rem;
 }
 .leftp{
@@ -81,7 +81,7 @@
 }
 
 .bottom_container{
-  margin-top: 5rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: row;
   /* justify-self: s; */

@@ -71,7 +71,7 @@ const page = () => {
     <div className='ms-40 me-40'>
     <div className='grid grid-cols-3 gap-x-20 mb-10'>
 
-          <div className=' text-center'>
+          <div className=' text-center '>
           <Card className='w-[334px] h-[286px]'>
             <CardHeader>
             <div className='flex justify-center items-center mt-8 '>

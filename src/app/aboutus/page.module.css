@@ -1,7 +1,7 @@
 .card_custom_style{
     box-shadow: none;
     border: none;
-    width: 25rem;
+    /* width: 25rem; */
 }
 
 .green_badge{
@@ -48,5 +48,5 @@
 
 .custom_container{
     
-    padding: 4rem;
+    padding: 2rem;
 }

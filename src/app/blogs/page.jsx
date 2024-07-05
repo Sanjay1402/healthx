@@ -31,16 +31,16 @@ let pages_text = { start: "Homepage", end: "Blogs" };
 
 const page = () => {
   return (
-    <main className="container">
+    <main className="container  overflow-hidden">
       <CurrentPage pages_text={pages_text} />
       <div className="">
         <div className="flex mt-40 mb-20 justify-between">
           <div className="">
-            <div className="text-5xl mb-4 font-bold">
+            <div className="text-4xl mb-4 font-bold">
               <span className="green">Blogs</span>{" "}
               <span className="orange">News &</span>
             </div>
-            <div className="text-4xl font-light mb-4">Events</div>
+            <div className="text-3xl font-light mb-4">Events</div>
           </div>
           <div className="flex">
             <div className="mr-4 opacity_text_orange">01</div>
@@ -54,7 +54,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="flex justify-between">
+      <div className="flex justify-between flex-col lg:md:flex-row">
         <div className="flex flex-col ">
           <div className="flex mt-5">
           
@@ -211,7 +211,7 @@ const page = () => {
           </div>
         </div>
 
-        <div className="cards grid grid-cols-2 gap-x-28 ms-10 mb-10">
+        <div className="cards grid grid-cols-1 md:lg:grid-cols-2  ms-10 mb-10">
    
           <Card className={styles.card_custom_style}>
             
@@ -221,8 +221,8 @@ const page = () => {
               <CardDescription> <Image
                   src="/blog_thumbnails/blog1.png"
                   alt=""
-                  height="298"
-                  width="425"
+                 height="198"
+                  width="225"
                   className="mb-10"
                 /></CardDescription>
             </CardHeader>
@@ -242,8 +242,8 @@ endpoints. today announced that it...</p>
               <CardDescription> <Image
                   src="/blog_thumbnails/blog2.png"
                   alt=""
-                  height="298"
-                  width="425"
+                 height="198"
+                  width="225"
                   className="mb-10"
                 /></CardDescription>
             </CardHeader>
@@ -258,8 +258,8 @@ endpoints. today announced that it...</p>
               <CardDescription> <Image
                   src="/blog_thumbnails/blog2.png"
                   alt=""
-                  height="298"
-                  width="425"
+                height="198"
+                  width="225"
                   className="mb-10"
                 /></CardDescription>
             </CardHeader>
@@ -274,8 +274,8 @@ endpoints. today announced that it...</p>
               <CardDescription> <Image
                   src="/blog_thumbnails/blog2.png"
                   alt=""
-                  height="298"
-                  width="425"
+                height="198"
+                  width="225"
                   className="mb-10"
                 /></CardDescription>
             </CardHeader>
@@ -290,8 +290,8 @@ endpoints. today announced that it...</p>
               <CardDescription> <Image
                   src="/blog_thumbnails/blog2.png"
                   alt=""
-                  height="298"
-                  width="425"
+                  height="198"
+                  width="225"
                   className="mb-10"
                 /></CardDescription>
             </CardHeader>
@@ -306,8 +306,8 @@ endpoints. today announced that it...</p>
               <CardDescription> <Image
                   src="/blog_thumbnails/blog2.png"
                   alt=""
-                  height="298"
-                  width="425"
+                  height="198"
+                  width="225"
                   className="mb-10"
                 /></CardDescription>
             </CardHeader>

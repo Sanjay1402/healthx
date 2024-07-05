@@ -47,13 +47,13 @@ const page = () => {
 
       
       <div className='ms-auto flex flex-col justify-end w-7/12'>
-            <div className='text-5xl mb-4 font-bold'><span className='green'>Transforming Primary</span> <span className='orange'>Healthcare</span></div>
-            <div className='text-4xl font-light mb-4'>Seamless Access to Expert Care</div>
-            <div className=' font-light text-xl'>Healthx, powered by TruDoc, is a global healthcare management company in Pakistan. We provide high-quality primary healthcare services using innovative technology. Our offerings include convenient online consultations with expert doctors and wellness advisors.</div>
+            <div className='text-4xl mb-4 font-bold'><span className='green'>Transforming Primary</span> <span className='orange'>Healthcare</span></div>
+            <div className='text-3xl font-light mb-4'>Seamless Access to Expert Care</div>
+            <div className=' font-light text-lg'>Healthx, powered by TruDoc, is a global healthcare management company in Pakistan. We provide high-quality primary healthcare services using innovative technology. Our offerings include convenient online consultations with expert doctors and wellness advisors.</div>
         </div>
      
 
-    <div className='flex justify-between mt-10 mb-10 '>
+    <div className='flex justify-between mt-10 mb-10 flex-col lg:md:flex-row'>
     <Card className={styles.card_custom_style}>
         <CardHeader>
             <CardDescription>
@@ -72,18 +72,18 @@ const page = () => {
         <Image
             src="/phone-b.png"
             alt=""
-            height='526'
-            width='783'
+            height='326'
+            width='1900'
         /> 
     </div>
 
 
 
-    <div className='flex justify-around mt-20 mb-20'>
-        <div className=''>Trusted by more than <span className='orange'>500,000+ <br></br></span>
+    <div className='flex justify-around mt-20 mb-20 flex-col lg:md:flex-row'>
+        <div className='self-center'>Trusted by more than <span className='orange'>500,000+ <br></br></span>
         active users across the globe</div>
 
-        <div className='flex'>
+        <div className='flex self-center'>
             <div className='green text-6xl font-medium'>50K</div>
             
             <div className='mt-1 ms-1'>
@@ -96,7 +96,7 @@ const page = () => {
                 </div>
             </div>
         </div>
-        <div className='flex'>
+        <div className='flex self-center'>
             <div className='green text-6xl font-medium'>95K</div>
             
             <div className='mt-1 ms-1'>
@@ -111,7 +111,7 @@ const page = () => {
         </div>
 
 
-        <div className='flex'>
+        <div className='flex self-center'>
             <div className='green text-6xl font-medium'>80%</div>
             
             <div className='mt-1 ms-1'>
@@ -129,16 +129,16 @@ const page = () => {
    
         </div>
 
-    <div className={`${styles.dark} ${styles.custom_container} flex gap-5 mb-5`}>
+    <div className={`${styles.dark} ${styles.custom_container} flex gap-5 mb-5 flex-col lg:md:flex-row`}>
 
     <div className='me-2'>
-        <div className='text-white text-4xl'>
+        <div className='mt-20 text-white text-3xl'>
         Healthx
         </div>
-        <div className='text-7xl font-semibold mt-5'>
+        <div className='text-5xl font-semibold mt-5'>
             <span className='orange'>Transforming</span> <span className='green'> Healthcare</span>
         </div>
-        <div className='font-light text-white text-5xl mt-5'>
+        <div className='font-light text-white text-3xl mt-5'>
         Embracing Humanity
         </div>
 
@@ -172,8 +172,8 @@ const page = () => {
             <Image
               src="/Rectangle 45.png"
               alt=""
-              height="76"
-              width="106"
+               height="76"
+              width="237"
               className="mb-10"
             />
         </div>
@@ -186,14 +186,14 @@ const page = () => {
         <Image
               src="/about_us/1.png"
               alt=""
-              height="145"
+             height="145"
               width="116"
               className="mb-10"
             />
           <CardTitle className="orange">Our Purpose</CardTitle>
         </CardHeader>
         <CardContent>
-        <p>To transform healthcare delivery for a positive impact on people's lives</p>
+        To transform healthcare delivery for a positive impact on people's lives
         </CardContent>
       </Card>
       <Card className={styles.dark_card}>    
@@ -208,7 +208,7 @@ const page = () => {
           <CardTitle className="orange">Our Mission</CardTitle>
         </CardHeader>
         <CardContent>
-        <p>Implementing fair and impartial care, uniting individuals and payers on a single platform</p>
+        Implementing fair and impartial care, uniting individuals and payers on a single platform
         </CardContent>
       </Card>
       <Card className={styles.dark_card}>     
@@ -239,8 +239,8 @@ const page = () => {
           <CardTitle className="orange">Our Approach</CardTitle>
         </CardHeader>
         <CardContent>
-        <p>Innovative technology and compassionate care, empowering individuals
-        </p>
+        Innovative technology and compassionate care, empowering individuals
+        
         </CardContent>
       </Card>
     </div>
@@ -271,15 +271,15 @@ const page = () => {
       </div>
       </div>
 
-      <div className='flex mb-10'>
+      <div className='flex mb-10  md:flex-row sm:flex-col'>
         <div className='ms-20 w-2/6'>
-        <div className='text-4xl font-light mb-4'>Visionaries of Health</div>
-        <div className='text-5xl mb-4 font-bold'><span className='orange'>Your </span> <span className='green'>Partners </span><span className='orange'>in Health</span></div>
-        <div className='font-light text-xl'>As a multinational healthcare management company, we take pride in our team of experienced healthcare professionals who specialize in primary healthcare and patient management.</div>
+        <div className='text-3xl font-light mb-4'>Visionaries of Health</div>
+        <div className='text-4xl mb-4 font-bold'><span className='orange'>Your </span> <span className='green'>Partners </span><span className='orange'>in Health</span></div>
+        <div className='font-light text-md'>As a multinational healthcare management company, we take pride in our team of experienced healthcare professionals who specialize in primary healthcare and patient management.</div>
         <div className='mt-5 justify-start'></div>
         <Slider />
         </div>
-        <div className='flex '>
+        <div className='lg:flex md:grid md:grid-cols-2 sm:mx-auto'>
         <div className='pb-16'>
         <Image
               src="/doctors/1.png"

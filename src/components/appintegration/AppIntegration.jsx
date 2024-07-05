@@ -5,7 +5,7 @@ import Image from "next/image";
 const AppIntegration = () => {
   return (
     <div className=''>
-      <div className={styles.upper_part}>
+      <div className={`${styles.upper_part}`}>
         <div className={styles.five}>05</div>
         <div className={styles.integration_container}>
           <span className={styles.integration_text}>App Integrations</span>
@@ -16,14 +16,14 @@ const AppIntegration = () => {
           </span>
         </div>
       </div>
-      <div className={styles.bottom_part}>
+      <div className={` flex-col lg:md:flex-row  ${styles.bottom_part}`}>
         <div>
           <Image
             src="/Rectangle 18.png"
             alt=""
             height="581"
             width="671"
-            className={styles.image}
+            className={`sm:mb-10 ${styles.image}`}
           />
         </div>
 
