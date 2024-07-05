@@ -14,11 +14,13 @@ import {
 import Slider from "@/components/radioslider/Slider";
 import Card from "@/components/card(Taha)/Card";
 import NewApp from "@/Model/Model";
+import Navbar from "@/components/navbar/Navbar";
 export default function Home() {
   return (
     <main>
-      <div className={`container overflow-visible ${styles.flexContainer}`}>
+      <div className={`container`}>
         <div className={styles.example}>
+          <Navbar />
           <div className={`flex flex-col ${styles.bottomLeft} flex-wrap`}>
             <div className={`flex flex-wrap ${styles.model}`}>
               <NewApp />
@@ -43,7 +45,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex justify-around mt-20 mb-20">
+        <div className="flex justify-around my-16 gap-20">
           <div className="">
             Trusted by more than{" "}
             <span className="orange">
@@ -52,29 +54,32 @@ export default function Home() {
             active users across the globe
           </div>
 
-          <div className="flex">
-            <div className="green text-6xl font-medium">50K</div>
+          <div className="grid md:grid-cols-4 sm:grid-cols-2 place-items-center ">
+            <div className="flex ">
+              <div className="green text-6xl font-medium ">50K</div>
 
-            <div className="mt-1 ms-1">
-              <div>Ratings</div>
-              <div>User</div>
+              <div className="mt-1 ms-1 ">
+                <div>Ratings</div>
+                <div>User</div>
+              </div>
             </div>
-          </div>
-          <div className="flex">
-            <div className="green text-6xl font-medium">95K</div>
 
-            <div className="mt-1 ms-1">
-              <div>Experienced</div>
-              <div>Clinics</div>
+            <div className="flex">
+              <div className="green text-6xl font-medium">95K</div>
+
+              <div className="mt-1 ms-1">
+                <div>Experienced</div>
+                <div>Clinics</div>
+              </div>
             </div>
-          </div>
 
-          <div className="flex">
-            <div className="green text-6xl font-medium">80%</div>
+            <div className="flex">
+              <div className="green text-6xl font-medium">80%</div>
 
-            <div className="mt-1 ms-1">
-              <div>Experienced</div>
-              <div>Clinics</div>
+              <div className="mt-1 ms-1">
+                <div>Experienced</div>
+                <div>Clinics</div>
+              </div>
             </div>
           </div>
         </div>
@@ -306,7 +311,7 @@ export default function Home() {
         {/* </div> */}
       </div>
       <div className="container mt-7 p-5">
-        <div className="flex justify-end my-5 py-5 text-wrap flex-wrap">
+        <div className="flex md:justify-end my-5 py-5 text-wrap flex-wrap sm:justify-start">
           <span className="orange text-5xl font-bold opacity-20 mx-2 px-2">
             03
           </span>
@@ -315,12 +320,12 @@ export default function Home() {
             <p>We are committed to your health</p>
           </div>
         </div>
-        <div className="flex gap-20 mb-10">
-          <div className=" w-2/6">
+        <div className="flex gap-20 mb-10 md:flex-row sm:flex-col">
+          <div className=" w-2/6 sm:mx-auto sm:w-full">
             <div className="text-4xl font-light mb-4">
               Visionaries of Health
             </div>
-            <div className="text-5xl mb-4 font-bold">
+            <div className="text-5xl mb-4 font-bold sm:m">
               <span className="orange">Your </span>{" "}
               <span className="green">Partners </span>
               <span className="orange">in Health</span>
@@ -334,7 +339,7 @@ export default function Home() {
             <Slider />
           </div>
 
-          <div className="flex ">
+          <div className="lg:flex md:grid md:grid-cols-2 sm:mx-auto">
             <div className="pb-16">
               <Image
                 src="/doctors/1.png"
@@ -356,7 +361,7 @@ export default function Home() {
         <AppIntegration />
         {/* Frequently Asked Component */}
 
-        <div className="flex justify-between">
+        <div className="flex flex-col sm:flex-col md:flex-row lg-flex-row sm:justify-center md:justify-center lg:justify-between">
           <div className="text-4xl mb-4 font-bold ">
             <span className="green">FREQUENTLY</span>{" "}
             <span className="orange">ASKED QUESTION</span>
@@ -452,7 +457,7 @@ export default function Home() {
         <AppBanner />
       </div>
       <div>
-        <div className="container flex justify-between flex-wrap">
+        <div className="container flex justify-between flex-wrap ">
           <div className="text-4xl font-bold">
             <span className="flex">
               <h1 className="orange">Blogs</h1>
@@ -465,7 +470,7 @@ export default function Home() {
               <span className="orange text-5xl font-bold opacity-20">08</span>
             </div>
             <div className="text-black">
-              <div className="flex justify-start">
+              <div className="flex justify-start sm:justify-center">
                 <h3 className="font-bold">Blogs</h3>
               </div>
               <p>We are committed to your Health</p>
@@ -475,7 +480,7 @@ export default function Home() {
         <div className="container flex gap-5 my-5 flex-wrap lg:flex-nowrap">
           <div className="w-40 h-1/2 my-5 py-2 text-xl">
             {" "}
-            <ul className="m-2 flex flex-col justify-evenly">
+            <ul className="m-2 flex flex-col justify-evenly md:justify-center sm:justify-center">
               <p className="mb-3"> All</p>
               <a href="/news">
                 {" "}
@@ -490,7 +495,7 @@ export default function Home() {
               </a>
             </ul>
           </div>
-          <div>
+          <div className="sm:mx-auto md:mx-auto">
             <p className="text-xs">Jan 11:24</p>
             <h1 className="text-sm md:text-md lg:text-md font-medium text-orange">
               Mental health Services should count as Healthcare
@@ -509,7 +514,7 @@ export default function Home() {
               </span>
             </div>
           </div>
-          <div>
+          <div className="sm:mx-auto md:mx-auto">
             <p className="text-xs">Jan 11:24</p>
             <h1 className="text-sm md:text-md lg:text-md font-medium">
               Corporate wellness programs help save on healthcare....{" "}
@@ -528,7 +533,7 @@ export default function Home() {
               </span>
             </div>
           </div>
-          <div>
+          <div className="sm:mx-auto md:mx-auto">
             <p className="text-xs">Jan 11:24</p>
             <h1 className="text-sm md:text-md lg:text-md font-medium">
               Corporate wellness programs help save on healthcare....{" "}

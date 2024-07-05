@@ -250,9 +250,9 @@
   background-size: cover;
   background-position: center;
   display: flex;
-  align-items: flex-end; /* Align items to the bottom */
-  justify-content: flex-start; /* Align items to the left */
-  padding: 20px; /* Add some padding if needed */
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 20px;
   box-sizing: border-box;
 }
 

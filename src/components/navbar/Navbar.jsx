@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import React from 'react'
-import Link from 'next/link'
+import React from "react";
+import Link from "next/link";
 import styles from "./navbar.module.css";
 import Image from "next/image";
 
@@ -21,65 +21,48 @@ const links = [
     id: 3,
     title: "About us",
     url: "/about",
-
-  },  
- 
+  },
 ];
-
 
 const Navbar = () => {
   return (
-    <div className={styles.container}>
+    <div className="container flex justify-between my-5">
       <Link href="/" className={styles.logo}>
-      <div>
-        <Image
-              src="/logo 1.png"
-              alt=""
-              height="122"
-              width="103"
-              className={styles.image}
-            />
-        <Image
-            src="/logo 2.png"
-            alt=""
-            height="31"
-            width="122"
-            className={styles.logo2}
-          />  
-          <span className={styles.bar}>|</span>  
-           <Image
-            src="/logo 3.png"
-            alt=""
-            height="23"
-            width="105"            
-            className={styles.logo3}
-          />
-        <Image
-            src="/logo 4.png"
-            alt=""
-            height="47"
-            width="105"
-            className={styles.logo4}
-          />  
-      </div>
-             
-      </Link>
-      <div className={styles.links}>
-        {links.map(link => <Link key={link.id} href={link.url} className={styles.link}>{link.title}</Link> )   }
-        <div className={styles.seldiv }>
-        <select className={styles.selstyles } name="language" id="language">
-          <option value="english">eng</option>
-          <option value="urdu">urdu</option>
-        </select>
+        <div className="flex items-center">
+          <div className="flex items-center">
+            <Image src="/logo 1.png" alt="" height={100} width={100} />
+            <Image src="/logo 2.png" alt="" height={100} width={100} />
+          </div>
+          <span className="font-light	ml-2">|</span>
+          <div className="flex items-center">
+            <Image src="/logo 3.png" alt="" height={50} width={80} />
+            <Image src="/logo 4.png" alt="" height={50} width={80} />
+          </div>
         </div>
-       
+      </Link>
+      <div className="flex justify-center items-center gap-10">
+        {links.map((link) => (
+          <Link key={link.id} href={link.url} className={styles.link}>
+            {link.title}
+          </Link>
+        ))}
+        <div className="">
+          <select className={styles.selstyles} name="language" id="language">
+            <option value="english">eng</option>
+            <option value="urdu">urdu</option>
+          </select>
+        </div>
+        <button
+          className=""
+          onClick={() => {
+            console.log("downloaded");
+          }}
+        >
+          Download App
+        </button>
       </div>
-      <button className={styles.button} onClick={() => {console.log("downloaded");
-      }}>
-            Download App
-          </button>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
