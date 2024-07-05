@@ -28,7 +28,7 @@ let pages_text = { start: "Homepage", end: "Solutions" };
 const page = () => {
   return (
     <div className='container'>
-
+        <Navbar />
         <CurrentPage pages_text={pages_text}/>
         <SolComp text={text}/>
         <div className='grid lg:md:grid-cols-3 sm:grid-cols-1 gap-8 mb-10 sm:place-items-center'>
